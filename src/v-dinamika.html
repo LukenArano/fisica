@@ -1,0 +1,163 @@
+<section class="view" id="dinamika" data-t="3" hidden>
+  <header class="view-head">
+    <span class="eyebrow">3. gaia · zure apunteetan «5. gaia»</span>
+    <h1>Partikularen dinamika orokorra</h1>
+    <p class="lede">Newtonen 2. legetik hiru teorema: momentu lineala, momentu angeluarra eta energia. Bakoitzak bere kontserbazio-legea du.</p>
+  </header>
+
+  <div class="warn"><b>Azterketan gehien ateratzen den gaia:</b> urtero 1–2 problema (energia + marruskadura, talkak, bira osoa bertikalean). 2025eko kontrolean: «momentu angeluarraren teorema, indar-momentuekin duen erlazioa eta kontserbazioa» (1,5 puntu).</div>
+
+  <div class="mine">
+    <p style="margin:0"><b>Zer erabili?</b><br>• <b>v</b> eskatzen badute → <b>lana eta energia</b><br>• <b>a</b> eskatzen badute → <b>Newtonen 2. legea</b></p>
+  </div>
+
+  <h2 id="momentu-lineala"><span class="sec-num">3.1</span>Momentu linealaren teorema <span class="exam-flag">Teoria 5.2</span></h2>
+  <div class="formula-box"><span class="tag">Momentu lineala · kg·m/s</span>
+    $$\vec p=m\,\vec v$$
+  </div>
+  <ol class="steps">
+    <li>Newtonen 2. legea berridatzita: $\sum\vec F=m\vec a=m\dfrac{d\vec v}{dt}=\dfrac{d(m\vec v)}{dt}=\dfrac{d\vec p}{dt}$.</li>
+    <li>
+      <div class="formula-box"><span class="tag">Teorema</span>
+      $$\vec F_{kanpo}=\frac{d\vec p}{dt}$$
+      </div></li>
+    <li><b>Kontserbazioa:</b> $\vec F_{kanpo}=0$ → $\vec p=$ kte.</li>
+  </ol>
+  <div class="mine"><p style="margin:0"><b>Talketan $\vec p$ beti kontserbatzen da</b>, $F_{kanpo}=0$ delako (talkaren barne-indarrak askoz handiagoak dira).</p></div>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>Talka</th><th>$\vec p$</th><th>$E_z$</th><th>Adibidea</th></tr></thead>
+    <tbody>
+      <tr><td>Elastikoa</td><td>kontserbatu</td><td>kontserbatu</td><td>Masa berdinak, bata geldi → abiadurak trukatu (2018-19)</td></tr>
+      <tr><td>Inelastikoa</td><td>kontserbatu</td><td>galdu</td><td>Billarra 2D (2022-23)</td></tr>
+      <tr><td>Guztiz inelastikoa</td><td>kontserbatu</td><td>galera max.</td><td>Bala blokean itsatsita: $mv=(m+M)V$ (2024-25)</td></tr>
+    </tbody>
+  </table></div>
+  <details class="extra">
+    <summary>Bulkada (teoremaren forma integrala)</summary>
+    <div class="extra-body">
+      <p>Teorema denboran integratuz: $\int\vec F\,dt=\Delta\vec p$. F(t) kurbaren azpiko azalera da.</p>
+      <div class="sim" id="sim-bulk" data-sim="bulkada"><div class="sim-head"><b>Bulkada</b><span>SIMULAZIOA</span></div></div>
+    </div>
+  </details>
+
+  <h2 id="momentu-angeluarra"><span class="sec-num">3.2</span>Momentu angeluarraren teorema <span class="exam-flag">Teoria 5.2 · kontrola 2025</span></h2>
+  <figure class="diagram">
+    <svg viewBox="0 0 520 270" role="img" aria-label="Momentu angeluarra: r eta p bektoreen biderkadura bektoriala, planoarekiko perpendikularra">
+      <polygon points="40,230 380,230 480,150 140,150" class="plane"/>
+      <line x1="120" y1="215" x2="330" y2="180" class="vec-a"/>
+      <line x1="330" y1="180" x2="450" y2="160" class="vec-v"/>
+      <line x1="120" y1="215" x2="120" y2="45" class="vec-acc"/>
+      <circle cx="120" cy="215" r="4" class="f-ink"/><text x="98" y="234">O</text>
+      <circle cx="330" cy="180" r="7" class="f-ink"/><text x="324" y="206">m</text>
+      <text x="220" y="216" class="t-a">r</text>
+      <text x="420" y="150" class="t-v">p = mv</text>
+      <text x="132" y="62" class="t-acc">L₀ = r × p</text>
+      <text x="290" y="40">|L₀| = r p sin θ</text>
+    </svg>
+    <figcaption>L₀ beti jatorri (O) batekiko definitzen da.</figcaption>
+  </figure>
+  <div class="formula-box"><span class="tag">Definizioak · kg·m²/s</span>
+    $$\vec L_0=\vec r\times\vec p\qquad\vec M_0=\vec r\times\vec F_{kanpo}$$
+  </div>
+  <div class="mine"><p style="margin:0">⚠ <b>Beti jatorri berean jarri!</b> L₀ eta M₀ puntu beraren inguruan kalkulatu (biderkadura bektoriala).</p></div>
+  <ol class="steps">
+    <li>Deribatu: $\dfrac{d\vec L_0}{dt}=\dfrac{d\vec r}{dt}\times\vec p+\vec r\times\dfrac{d\vec p}{dt}$.</li>
+    <li>Lehena nulua: $\vec v\times m\vec v=0$ (paraleloak).</li>
+    <li>Bigarrenean $\dfrac{d\vec p}{dt}=\vec F_{kanpo}$:
+      <div class="formula-box"><span class="tag">Teorema</span>
+      $$\frac{d\vec L_0}{dt}=\vec r\times\vec F_{kanpo}=\vec M_0$$
+      </div></li>
+    <li><b>Kontserbazioa:</b> $\sum\vec M_0=0$ → $\vec L_0=$ kte. Gertatzen da indarrik ez dagoenean edo indarra <b>zentrala</b> denean (beti O-tik pasatzen da).</li>
+  </ol>
+  <div class="mine"><p style="margin:0">$\vec p\leftrightarrow\vec F$: <b>traslazioa</b>. $\vec L\leftrightarrow\vec M_0$ (torque): <b>biraketa</b>.<br>Noiz kontserbatzen dira? $\vec p=$ kte traslaziorako askatasuna dagoenean; $\vec L_0=$ kte biraketarako askatasuna dagoenean.</p></div>
+
+  <h2 id="energia"><span class="sec-num">3.3</span>Lana, potentzia eta energia <span class="exam-flag">Teoria 5.2</span></h2>
+  <div class="two">
+    <div class="formula-box"><span class="tag">Lana · J</span>
+      $$W=\int\vec F\cdot d\vec r\qquad(\vec F\text{ kte}: W=\vec F\cdot\vec d)$$
+    </div>
+    <div class="formula-box"><span class="tag">Potentzia · W</span>
+      $$P=\frac{dW}{dt}=\frac{\vec F\cdot d\vec r}{dt}=\vec F\cdot\vec v$$
+    </div>
+  </div>
+  <ol class="steps">
+    <li>$E_z=\tfrac12mv^2$ deribatuz: $\dfrac{dE_z}{dt}=m\vec v\cdot\dfrac{d\vec v}{dt}=\vec F\cdot\vec v=P$.</li>
+    <li>Denboran integratuz:
+      <div class="formula-box"><span class="tag">Energia zinetikoaren teorema</span>
+      $$W_{osoa}=\Delta E_z$$
+      </div></li>
+  </ol>
+  <p>$W_{osoa}$: indar <b>guztien</b> lana. Normalak ez du lanik egiten higidurarekiko perpendikularra bada; marruskaduraren lana negatiboa: $W_r=-\mu_dN\,d$.</p>
+
+  <h2 id="kontserbakorrak"><span class="sec-num">3.4</span>Indar kontserbakorrak eta energia mekanikoa <span class="exam-flag">Teoria 5.3</span></h2>
+  <div class="two">
+    <figure class="diagram">
+      <svg viewBox="0 0 300 200" role="img" aria-label="Bi ibilbide A puntutik B puntura: indar kontserbakorraren lana berdina da bietan">
+        <path d="M40 160 C 60 60, 160 40, 250 50" class="ln" style="stroke:var(--c-v);stroke-width:2.4"/>
+        <path d="M40 160 C 140 175, 230 150, 250 50" class="ln" style="stroke:var(--c-an);stroke-width:2.4"/>
+        <circle cx="40" cy="160" r="5" class="f-ink"/><text x="22" y="184">A</text>
+        <circle cx="250" cy="50" r="5" class="f-ink"/><text x="258" y="46">B</text>
+        <text x="80" y="60" class="t-v">1</text><text x="190" y="172" class="t-an">2</text>
+        <text x="96" y="120">W₁ = W₂</text>
+      </svg>
+      <figcaption>Ibilbide itxian: W = 0</figcaption>
+    </figure>
+    <div>
+      <p>Indar bat <span class="kw">kontserbakorra</span> da bere lana ibilbidearen menpe ez badago; ibilbide itxi batean $W=0$. Posizioaren menpeko indarrak dira:</p>
+      <div class="formula-box"><span class="tag">Energia potentzialak</span>
+        $$\text{grabitatorioa: }E_p=mgh\ \ (=mg\,\Delta z)$$
+        $$\text{elastikoa: }E_p=\tfrac12kx^2$$
+      </div>
+    </div>
+  </div>
+  <div class="formula-box"><span class="tag">Indar kontserbakorrak bakarrik</span>
+    $$W_{osoa}=\Delta E_z\qquad W_{konts}=-\Delta E_p$$ $$\Rightarrow\ \Delta(E_z+E_p)=0\ \Rightarrow\ \Delta E_{mek}=0$$
+  </div>
+  <div class="formula-box"><span class="tag">Kontserbakorrak + ez-kontserbakorrak (marruskadura)</span>
+    $$W_{osoa}=\Delta E_z\qquad\Delta E_{mek}=W_{ez\text{-}konts}$$
+  </div>
+  <div class="sim" id="sim-energ" data-sim="energia">
+    <div class="sim-head"><b>Energia potentzialaren kurba</b><span>SIMULAZIOA</span></div>
+  </div>
+  <p>Partikula $E_p\le E_{mek}$ den eskualdeetan bakarrik mugi daiteke. Itzulera-puntuetan $v=0$. Aktibatu marruskadura: $E_{mek}$ jaisten doa.</p>
+
+  <h2 id="bertikal-zirk"><span class="sec-num">3.5</span>Pista zirkularrak eta bira osoa</h2>
+  <div class="two">
+    <figure class="diagram">
+      <svg viewBox="0 0 300 300" role="img" aria-label="Kizkurra bertikala: goian eta behean normala eta pisua">
+        <circle cx="150" cy="150" r="100" class="ln" style="stroke-width:2.4"/>
+        <line x1="20" y1="250" x2="280" y2="250" class="ln"/>
+        <circle cx="150" cy="50" r="8" class="f-ink"/>
+        <line x1="150" y1="50" x2="150" y2="105" class="vec-f"/>
+        <line x1="163" y1="50" x2="163" y2="92" class="vec-v"/>
+        <line x1="150" y1="50" x2="90" y2="50" class="vec-acc"/>
+        <text x="118" y="122" class="t-f">mg</text>
+        <text x="170" y="96" class="t-v">N</text>
+        <text x="70" y="44" class="t-acc">v</text>
+        <circle cx="150" cy="250" r="8" class="f-ink"/>
+        <line x1="138" y1="250" x2="138" y2="180" class="vec-v"/>
+        <line x1="162" y1="250" x2="162" y2="290" class="vec-f"/>
+        <text x="112" y="192" class="t-v">N</text>
+        <text x="168" y="292" class="t-f">mg</text>
+        <line x1="150" y1="150" x2="250" y2="150" class="ln-m"/><text x="196" y="144">R</text>
+      </svg>
+    </figure>
+    <div>
+      <div class="mine"><p style="margin:0"><b>Ibilbidea eta zuzena → lana.</b> Pista zirkularra → lana/energia (kontserbakorrak bakarrik → $\Delta E_{mek}=0$) + norabide normalean $\sum F=ma_n=m\dfrac{v^2}{R}$. Goian erori gabe: $N=0$.</p></div>
+      <div class="formula-box"><span class="tag">Goian · N = 0</span>
+        $$mg=m\frac{v^2}{R}\Rightarrow v_{goi,min}=\sqrt{gR}$$
+      </div>
+      <div class="formula-box"><span class="tag">Energiaz behean</span>
+        $$v_{be,min}=\sqrt{5gR}$$
+      </div>
+    </div>
+  </div>
+
+  <h2 id="newton-v"><span class="sec-num">3.6</span>Abiaduraren menpeko indarrak</h2>
+  <div class="mine">
+    <p style="margin:0">Indarrak <b>v</b> badu ($F=-kv$): $a=\dfrac{dv}{dt}$ eta <b>aldagaiak banandu</b> — v alde batera, t bestera — eta integratu.<br>
+    v₀-tik abiatuta, v hazten da $kv=mg$ izan arte: orduan $\sum F=0$ eta $v=$ kte (muga-abiadura $v_l=mg/k$).</p>
+  </div>
+
+  <nav class="pager"><a class="btn btn-ghost" href="#oinarriak">← 2. gaia</a><a class="btn" href="#oszilazioak">4. gaia: Oszilazioak →</a></nav>
+</section>

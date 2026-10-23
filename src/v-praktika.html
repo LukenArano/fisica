@@ -1,0 +1,71 @@
+<section class="view wide" id="praktika" hidden>
+  <header class="view-head">
+    <span class="eyebrow">Teoria eta formulak buruz ikasteko</span>
+    <h1>Praktika</h1>
+    <p class="lede">Lau modu: aukera anitzeko galderak, zenbakiekin kalkuluak, dedukzioak ordenatzea eta azterketako ariketak. Zure emaitzak nabigatzaile honetan gordetzen dira.</p>
+  </header>
+  <div class="masonry">
+    <a class="pin tint" data-t="3" href="#galderak"><span class="n">110+ GALDERA</span><b class="big">Galderak</b><small>Formula zuzena aukeratu, formula osatu (□), kontzeptuak eta unitateak. 3–5 aukera. 15 galderako saioak.</small></a>
+    <a class="pin tint" data-t="1" href="#kalkuluak"><span class="n">30 MOTA · AMAIGABEAK</span><b class="big">Kalkulu azkarrak</b><small>Zenbakiak aldatzen dira aldi bakoitzean. Idatzi emaitza eta ikusi zein formula erabili behar zen.</small></a>
+    <a class="pin tint" data-t="4" href="#dedukzioak"><span class="n">10 DEDUKZIO</span><b class="big">Dedukzioak ordenatu</b><small>Teoria-galderen urratsak nahastuta daude: jarri ordenan eta egiaztatu.</small></a>
+    <a class="pin tint" data-t="2" href="#ariketak"><span class="n">37 ARIKETA</span><b class="big">Ariketa ebatziak</b><small>Azterketakoak eta liburukoak, ebazpena urratsez urrats.</small></a>
+  </div>
+  <div class="pin" style="max-width:720px">
+    <p style="margin:0" id="q-total"></p>
+    <div class="filter-row"><button type="button" class="btn btn-small btn-ghost" id="q-reset">Aurrerapen guztia ezabatu</button></div>
+    <div class="warn" id="q-confirm" hidden><b>Ziur zaude?</b> Galderen, kalkuluen eta dedukzioen emaitzak ezabatuko dira. <button type="button" class="btn btn-small" id="q-reset-yes">Bai, ezabatu</button> <button type="button" class="btn btn-small btn-ghost" id="q-reset-no">Utzi</button></div>
+  </div>
+</section>
+
+<section class="view" id="galderak" hidden>
+  <header class="view-head">
+    <span class="eyebrow"><a href="#praktika">Praktika</a> › Galderak</span>
+    <h1>Galderak</h1>
+  </header>
+  <div class="filter-row" role="group" aria-label="Gaia">
+    <button type="button" class="chip" data-qt="all" aria-pressed="true">Gai guztiak</button>
+    <button type="button" class="chip" data-qt="1" aria-pressed="false">1 · Zinematika</button>
+    <button type="button" class="chip" data-qt="2" aria-pressed="false">2 · Oinarriak</button>
+    <button type="button" class="chip" data-qt="3" aria-pressed="false">3 · Dinamika</button>
+    <button type="button" class="chip" data-qt="4" aria-pressed="false">4 · Oszilazioak</button>
+  </div>
+  <div class="filter-row" role="group" aria-label="Mota">
+    <button type="button" class="chip" data-qk="all" aria-pressed="true">Mota guztiak</button>
+    <button type="button" class="chip" data-qk="formula" aria-pressed="false">Formulak</button>
+    <button type="button" class="chip" data-qk="osatu" aria-pressed="false">Osatu formula</button>
+    <button type="button" class="chip" data-qk="kontzeptua" aria-pressed="false">Kontzeptuak</button>
+  </div>
+  <div class="filter-row" role="group" aria-label="Zein galdera">
+    <button type="button" class="chip" data-qm="mix" aria-pressed="true">Nahastuta</button>
+    <button type="button" class="chip" data-qm="new" aria-pressed="false">Berriak bakarrik</button>
+    <button type="button" class="chip" data-qm="wrong" aria-pressed="false">Okerrak bakarrik</button>
+  </div>
+  <div class="dots" id="q-dots" aria-hidden="true"></div>
+  <div class="q-card" id="q-card"></div>
+</section>
+
+<section class="view" id="kalkuluak" hidden>
+  <header class="view-head">
+    <span class="eyebrow"><a href="#praktika">Praktika</a> › Kalkulu azkarrak</span>
+    <h1>Kalkulu azkarrak</h1>
+    <p class="lede">Zenbakiak ausaz aldatzen dira. % 2ko errorea onartzen da. Erabili kalkulagailua!</p>
+  </header>
+  <div class="filter-row" role="group" aria-label="Gaia">
+    <button type="button" class="chip" data-ct="all" aria-pressed="true">Gai guztiak</button>
+    <button type="button" class="chip" data-ct="1" aria-pressed="false">1 · Zinematika</button>
+    <button type="button" class="chip" data-ct="2" aria-pressed="false">2 · Oinarriak</button>
+    <button type="button" class="chip" data-ct="3" aria-pressed="false">3 · Dinamika</button>
+    <button type="button" class="chip" data-ct="4" aria-pressed="false">4 · Oszilazioak</button>
+  </div>
+  <div class="calc-card" id="c-card"></div>
+</section>
+
+<section class="view" id="dedukzioak" hidden>
+  <header class="view-head">
+    <span class="eyebrow"><a href="#praktika">Praktika</a> › Dedukzioak ordenatu</span>
+    <h1>Dedukzioak ordenatu</h1>
+    <p class="lede">Teoria-galderetan puntuak dedukzioaren ordenak ematen ditu. Mugitu urratsak ▲ ▼ geziekin.</p>
+  </header>
+  <div class="filter-row" id="d-pick"></div>
+  <div class="ord-wrap"><div class="ord-card" id="d-card"></div></div>
+</section>

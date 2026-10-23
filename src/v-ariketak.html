@@ -1,0 +1,456 @@
+<section class="view" id="ariketak" hidden>
+  <header class="view-head">
+    <span class="eyebrow">Maiatzeko azterketak 2018–2025 · 2025eko kontrola · liburuko ariketak</span>
+    <h1>Ariketa ebatziak</h1>
+    <p class="lede">Saiatu lehenik zure kabuz. Gero ireki ebazpena urratsez urrats: «Hurrengo urratsa» sakatu behar duzun bakoitzean, pentsatu zer etorriko den.</p>
+  </header>
+  <div class="filter-row" role="group" aria-label="Gaiaren arabera iragazi">
+    <button type="button" class="chip" data-pf="all" aria-pressed="true">Denak</button>
+    <button type="button" class="chip" data-pf="1" aria-pressed="false">1 · Zinematika</button>
+    <button type="button" class="chip" data-pf="2" aria-pressed="false">2 · Oinarriak</button>
+    <button type="button" class="chip" data-pf="3" aria-pressed="false">3 · Dinamika</button>
+    <button type="button" class="chip" data-pf="4" aria-pressed="false">4 · Oszilazioak</button>
+    <button type="button" class="chip" data-pf="exam" aria-pressed="false">Azterketakoak bakarrik</button>
+    <button type="button" class="chip" data-pf="book" aria-pressed="false">Liburukoak</button>
+  </div>
+
+  <!-- ===================== 1. GAIA ===================== -->
+  <article class="prob" data-topic="1" data-t="1" data-exam="1" id="p-angeluak">
+    <div class="prob-head"><h3>Irismen jakin baterako angeluak</h3><span class="src">Maiatza 2019-20 · 1A</span></div>
+    <div class="prob-body">
+      <p class="stmt">Projektil bat jaurtitzen da plano horizontal batean 100 m/s-ko abiaduraz. Airearen frikzioa arbuiatzen bada, kalkula ezazu zein angelu edo angeluetarako (horizontalarekiko) irismena den: a) 1200 m, b) 1000 m, c) 800 m. Har bedi $g=10\ \text{m/s}^2$.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Irismenaren formula</span><p>$y=0$ jarrita: $t_{heg}=2v_0\sin\theta/g$, eta $x_{max}=v_0\cos\theta\cdot t_{heg}=\dfrac{v_0^2\sin2\theta}{g}$. Bakandu: $\sin2\theta=\dfrac{g\,x_{max}}{v_0^2}$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) 1200 m</span><p>$\sin2\theta=\dfrac{10\cdot1200}{10^4}=1{,}2\gt1$ → <b>ezinezkoa</b>. Irismen maximoa $v_0^2/g=1000$ m da.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) eta c)</span><p>b) $\sin2\theta=1$ → $\theta=45°$ (soluzio bakarra). c) $\sin2\theta=0{,}8$ → $2\theta=53{,}13°$ edo $126{,}87°$ → $\theta_1=26{,}6°$ eta $\theta_2=63{,}4°$ (osagarriak: $\theta_1+\theta_2=90°$).</p></div>
+      <div class="sol-step answer" hidden>a) ezinezkoa · b) 45° · c) 26,6° eta 63,4°</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="1" data-t="1" id="p-pista-zirk">
+    <div class="prob-head"><h3>Ibilgailua pista zirkularrean</h3><span class="src">Liburua · 46. or., 5. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Ibilgailu bat 100 m-ko erradioa duen pista zirkular batetik doa. Geldiunetik abiatzen da eta azelerazio tangentzial konstantearekin higitzen hasten da. Buelta bat eman ostean, hasierako puntutik pasatzean 30 m/s-ko abiadura darama. Kalkulatu: a) azelerazio tangentziala, b) zirkunferentziaren 1/8 biratu dueneko aldiunea, c) abiadura eta azelerazio normala aldiune horretan.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) HZUA arku-luzeran</span><p>$v^2=v_0^2+2a_ts$ eta buelta batean $s=2\pi R=628{,}3$ m: $a_t=\dfrac{30^2}{2\cdot628{,}3}=0{,}716\ \text{m/s}^2$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) 1/8 buelta</span><p>$s=2\pi R/8=78{,}54$ m $=\tfrac12a_tt^2$ → $t=\sqrt{2s/a_t}=14{,}8$ s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · c) abiadura eta a<sub>n</sub></span><p>$v=a_tt=10{,}6$ m/s; $a_n=v^2/R=1{,}125\ \text{m/s}^2$. Ohartu $a_n$ hazten doala eta $a_t$ konstantea dela.</p></div>
+      <div class="sol-step answer" hidden>a) 0,72 m/s² · b) 14,8 s · c) 10,6 m/s, 1,125 m/s²</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="1" data-t="1" id="p-kurbadura">
+    <div class="prob-head"><h3>Kurbadura-erradioa goiko puntuan</h3><span class="src">Liburua · 49. or., 12.–13. ariketak</span></div>
+    <div class="prob-body">
+      <p class="stmt">a) Kalkula ezazu tiro parabolikoan jaurtitako partikula baten ibilbidearen kurbadura-erradioa bere punturik altuenean ($v_0$, $\theta$, $g$-ren menpe). b) Zein angelurekin jaurti beharko genuke proiektila goiko puntuan kurbadura-erradioa eta altuera berdinak izateko?</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Goiko puntuko bektoreak</span><p>Goian $v_y=0$, beraz $\vec v=v_0\cos\theta\,\hat\imath$ eta $\vec a=-g\hat\jmath$. Perpendikularrak dira: $a_t=0$ eta $a_n=g$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) ρ</span><p>$a_n=v^2/\rho$ → $\rho=\dfrac{v^2}{a_n}=\dfrac{v_0^2\cos^2\theta}{g}$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) ρ = h<sub>max</sub></span><p>$\dfrac{v_0^2\cos^2\theta}{g}=\dfrac{v_0^2\sin^2\theta}{2g}$ → $\tan^2\theta=2$ → $\theta=\arctan\sqrt2=54{,}7°\approx55°$.</p></div>
+      <div class="sol-step answer" hidden>a) ρ = v₀² cos²θ / g · b) θ ≈ 55°</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="1" data-t="1" id="p-bi-gorputz">
+    <div class="prob-head"><h3>Bi gorputz zirkunferentzian, aurkako noranzkoetan</h3><span class="src">Liburua · 47. or., 10. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Bi gorputz zirkunferentzia baten puntu beretik abiatzen dira, biak $v_0$ abiaduraz baina aurkako noranzkoetan. Erradioa $R$ da. Bat azeleratuz doa eta bestea dezeleratuz, azelerazio tangentzialaren modulu berdin eta konstantearekin. a) Kalkula $a_t$, berriro elkartzen diren puntuan dezeleratuak abiadura nulua badu. b) Gorputz bakoitzaren azelerazio osoa elkartze-puntuan.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Elkartze-baldintza</span><p>$s_1=v_0t+\tfrac12a_tt^2$ eta $s_2=v_0t-\tfrac12a_tt^2$. Elkartzen dira $s_1+s_2=2\pi R$ denean: $2v_0t=2\pi R$ → $t=\pi R/v_0$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) a<sub>t</sub></span><p>Dezeleratua geldi: $v_0-a_tt=0$ → $a_t=\dfrac{v_0}{t}=\dfrac{v_0^2}{\pi R}$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) azelerazio osoak</span><p>Azeleratuak $v=v_0+a_tt=2v_0$ du: $a_n=\dfrac{4v_0^2}{R}$ eta $a_t=\dfrac{v_0^2}{\pi R}$. Dezeleratuak $v=0$: $a_n=0$, $a_t=\dfrac{v_0^2}{\pi R}$ bakarrik.</p></div>
+      <div class="sol-step answer" hidden>a) a_t = v₀²/(πR) · b) azeleratua: a_n = 4v₀²/R + a_t; dezeleratua: a_t bakarrik</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="1" data-t="1" id="p-metroa">
+    <div class="prob-head"><h3>Ur-tantak Bilboko metroaren leihotik</h3><span class="src">Liburua · 51. or., 21. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Metroko tren bat tunel batean abiadura konstantez doa. Sabaitik ur-tantak bertikalki erortzen dira. Leihotik ikusten direnean (sabaitik 4 m beherago), tanten abiadurak 60°-ko angelua osatzen du horizontalarekin, bidaiariarentzat. Kalkula: a) trenaren abiadura eta tanten abiadura trenetik ikusita; b) tanten azelerazioa bi behatzaileentzat.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Lurretik</span><p>Erorketa librea 4 m: $v_y=\sqrt{2gh}=\sqrt{2\cdot9{,}8\cdot4}=8{,}85$ m/s, beherantz, $v_x=0$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Trenetik: v′ = v − V</span><p>Trena $V\hat\imath$-z doa (Galileo): $\vec v\,'=-V\hat\imath-8{,}85\hat\jmath$. Angelua horizontalarekin: $\tan60°=\dfrac{8{,}85}{V}$ → $V=5{,}1$ m/s. $|\vec v\,'|=\dfrac{8{,}85}{\sin60°}=10{,}2$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · Azelerazioa</span><p>Trena abiadura konstantez doa → $\vec A_{O'}=0$ → $\vec a\,'=\vec a=\vec g$ bientzat (Galileoren transformazioa).</p></div>
+      <div class="sol-step answer" hidden>a) V = 5,1 m/s; v′ = 10,2 m/s · b) a = g bientzat</div>
+    </div>
+  </article>
+
+  <!-- ===================== 2. GAIA ===================== -->
+  <article class="prob" data-topic="2" data-t="2" data-exam="1" id="p-starflyer">
+    <div class="prob-head"><h3>«Starflyer» atrakzioa: pendulu konikoa</h3><span class="src">Maiatza 2023-24 · 3. problema (2 p)</span></div>
+    <div class="prob-body">
+      <p class="stmt">Egitura birakor batek 10 m-ko erradioa du eta bertatik $L=15$ m-ko kateak zintzilik daude. Ziburu batean bi pertsona daude, guztira $m=100$ kg. Errotatzean kateak 40°-ko angelua osatzen du bertikalarekin. Kalkula: a) abiadura angeluarra eta periodoa; b) bidaiarien abiadura lineala (km/h); c) katearen tentsioa. $g=10\ \text{m/s}^2$.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Biraketa-erradioa</span><p>Ziburua ez dago 10 m-ra, baizik eta $r=10+L\sin40°=10+9{,}64=19{,}64$ m-ra. Hau da akatsik ohikoena!</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Gorputz askearen diagrama</span><p>Indarrak: $T$ (katean) eta $mg$. Bertikalean oreka: $T\cos40°=mg$. Horizontalean (zentrorantz): $T\sin40°=m\omega^2r$. Zatituz: $\tan40°=\omega^2r/g$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · a) eta b)</span><p>$\omega=\sqrt{\dfrac{g\tan40°}{r}}=\sqrt{\dfrac{10\cdot0{,}839}{19{,}64}}=0{,}654$ rad/s; $T_{per}=2\pi/\omega=9{,}6$ s. $v=\omega r=12{,}8$ m/s $=46{,}2$ km/h.</p></div>
+      <div class="sol-step" hidden><span class="lbl">4 · c) tentsioa</span><p>$T=\dfrac{mg}{\cos40°}=\dfrac{1000}{0{,}766}=1305$ N.</p></div>
+      <div class="sol-step answer" hidden>a) ω = 0,654 rad/s, T = 9,6 s · b) 46,2 km/h · c) 1305 N</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="2" data-t="2" data-exam="1" id="p-atwood2">
+    <div class="prob-head"><h3>Hiru masa eta bi polea</h3><span class="src">Maiatza 2022-23 · 2. problema</span></div>
+    <div class="prob-body">
+      <figure class="diagram prob-figure">
+        <svg viewBox="0 0 260 220" role="img" aria-label="m1 masa erdian, bi sokarekin; soka bakoitza polea batetik pasatzen da eta m2 eta m3 masak zintzilik">
+          <line x1="20" y1="14" x2="240" y2="14" class="ln"/>
+          <line x1="60" y1="14" x2="60" y2="40" class="ln"/><line x1="200" y1="14" x2="200" y2="40" class="ln"/>
+          <circle cx="60" cy="50" r="12" class="ln"/><circle cx="200" cy="50" r="12" class="ln"/>
+          <line x1="48" y1="50" x2="48" y2="150" class="ln"/><line x1="212" y1="50" x2="212" y2="130" class="ln"/>
+          <path d="M60 38 Q90 38 130 110" class="ln"/><path d="M200 38 Q170 38 130 110" class="ln"/>
+          <rect x="112" y="110" width="36" height="30" class="box"/><text x="120" y="130" font-size="13">m₁</text>
+          <rect x="32" y="150" width="32" height="28" class="box"/><text x="38" y="169" font-size="13">m₂</text>
+          <rect x="196" y="130" width="32" height="26" class="box"/><text x="202" y="148" font-size="13">m₃</text>
+        </svg>
+      </figure>
+      <p class="stmt">$m_1$ masak bi soka ditu lotuta eta bakoitza polea batetik pasatzen da (erradioa 4 cm, masa arbuiagarria). Soken beste muturretan $m_2=1{,}9$ kg eta $m_3=1{,}3$ kg daude ($m_1=3{,}6$ kg). Pausagunetik abiatzen bada, marruskadurarik gabe: a) $m_1$-en azelerazioa; b) tentsioak; c) igo ala jaitsi egingo da $m_1$?; d) polea bakoitzaren azelerazio angeluarra. $g=10\ \text{m/s}^2$.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Hiru ekuazio</span><p>Hartu $a$ positiboa $m_1$ jaisten denean (orduan $m_2$ eta $m_3$ igotzen dira, azelerazio berarekin, sokak bertikalak direla onartuz):<br>$m_1g-T_2-T_3=m_1a$ · $T_2-m_2g=m_2a$ · $T_3-m_3g=m_3a$</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) Batu hirurak</span><p>Tentsioak ezabatzen dira: $a=\dfrac{m_1-m_2-m_3}{m_1+m_2+m_3}g=\dfrac{0{,}4}{6{,}8}\cdot10=0{,}588\ \text{m/s}^2$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) eta c)</span><p>$T_2=m_2(g+a)=20{,}1$ N; $T_3=m_3(g+a)=13{,}8$ N. $a\gt0$ → $m_1$ <b>jaitsi</b> egiten da ($m_1\gt m_2+m_3$).</p></div>
+      <div class="sol-step" hidden><span class="lbl">4 · d) poleak</span><p>Soka ez da irristatzen: $\alpha=a/R=0{,}588/0{,}04=14{,}7\ \text{rad/s}^2$. Ezkerrekoa eta eskuinekoa aurkako noranzkoetan biratzen dira.</p></div>
+      <div class="sol-step answer" hidden>a) 0,588 m/s² · b) T₂ = 20,1 N, T₃ = 13,8 N · c) jaisten da · d) 14,7 rad/s²</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="2" data-t="2" data-exam="1" id="p-Ct">
+    <div class="prob-head"><h3>Denborarekin hazten den indarra</h3><span class="src">Maiatza 2019-20 · 3A</span></div>
+    <div class="prob-body">
+      <p class="stmt">$m=3$ kg-ko objektua zoruan dago. $t=0$-tik aurrera gorantz tiratzen da $F=C\,t$ indarrarekin ($C=2$ N/s). a) Noiz galtzen du kontaktua zoruarekin? b) Zein da azelerazioa $t=21$ s-an? $g=10\ \text{m/s}^2$.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Kontaktuan dagoen bitartean</span><p>Indarrak: $F$ gora, $N$ gora, $mg$ behera. Geldi: $F+N-mg=0$ → $N=mg-Ct$. Normala txikitzen doa.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) N = 0</span><p>Kontaktua galtzen da $N=0$ denean: $t=\dfrac{mg}{C}=\dfrac{30}{2}=15$ s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) t = 21 s</span><p>Orain $N=0$: $Ct-mg=ma$ → $a=\dfrac{2\cdot21-30}{3}=4\ \text{m/s}^2$.</p></div>
+      <div class="sol-step answer" hidden>a) 15 s · b) 4 m/s²</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="2" data-t="2" data-exam="1" id="p-diskoa">
+    <div class="prob-head"><h3>Bi masa disko biragarrian</h3><span class="src">Maiatza 2018-19 · 2. problema</span></div>
+    <div class="prob-body">
+      <p class="stmt">Disko horizontal batek bere zentrotik pasatzen den ardatz bertikalaren inguruan bira dezake. Gainean $m_1$ eta $m_2$ masak daude, ardatzetik $R_1$ eta $R_2$ distantziara ($R_2\gt R_1$), $\mu_s$ marruskadura-koefiziente estatikoarekin. a) Diskoa $\alpha$ oso txikiarekin azeleratzen hasten da. Zein hasiko da lehena labaintzen, zein norabidetan eta zergatik? b) $\alpha$ oso handia bada, zein norabidetan irristatuko lirateke hasieran? Zein baldintza bete behar du $\alpha$-k masak ez labaintzeko hasieran?</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) α txikia: zentripetua nagusi</span><p>$\alpha\approx0$ denez $a_t\approx0$, eta marruskadura estatikoak indar zentripetua ematen du: $m\omega^2R\le\mu_smg$ → $\omega\le\sqrt{\mu_sg/R}$. Masa ez dago muga honen menpe, bai ordea $R$-ren menpe.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) emaitza</span><p>$R_2$ handiagoa denez, $\omega_{max}$ txikiagoa du: <b>$m_2$ labainduko da lehena</b>, <b>kanporantz</b> (erradialki), marruskadurak ezin duelako zentripetu nahikoa eman. Diskotik ikusita: zentrifugoa marruskadura baino handiagoa.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) α handia: tangentziala nagusi</span><p>Hasieran $\omega=0$ → $a_n=0$, eta marruskadurak azelerazio tangentziala eman behar du: $m\alpha R\le\mu_smg$ → $\alpha\le\dfrac{\mu_sg}{R}$. Bi masentzat: $\alpha\le\mu_sg/R_2$. Bestela <b>atzerantz</b> irristatzen dira (biraketaren aurka), diskoaren ikuspegitik.</p></div>
+      <div class="sol-step answer" hidden>a) m₂ (R handiena), kanporantz, ω = √(μₛg/R₂) · b) atzerantz; α ≤ μₛg/R₂</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="2" data-t="2" id="p-malda-az">
+    <div class="prob-head"><h3>Plano inklinatu azeleratua (sistema ez-inertziala)</h3><span class="src">Liburua · 66. or., 14. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">30°-ko plano inklinatua ezkerrerantz azeleratzen da $A=12\ \text{m/s}^2$-z, eta gainean dagoen objektua maldan gora igotzen da. Marruskadura-koefiziente dinamikoa $\mu_d=0{,}2$ da. Zein da objektuak planoarekiko duen azelerazioa?</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Planoaren sistema hartu</span><p>Planoarekiko azelerazioa eskatzen dute → O′ planoa. Inertzia-indarra $-m\vec A$: eskuinerantz, $mA$ modulua. Maldaren osagaiak: $mA\cos30°$ maldan gora, $mA\sin30°$ planoaren kontra.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Normala</span><p>Perpendikularrean oreka (O′-n): $N=mg\cos30°+mA\sin30°$. Inertzia-indarrak ere planoaren kontra estutzen du!</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · Maldaren norabidean</span><p>$ma'=mA\cos30°-mg\sin30°-\mu_dN$ → $a'=12\cdot0{,}866-9{,}8\cdot0{,}5-0{,}2(8{,}49+6)=2{,}6\ \text{m/s}^2$ maldan gora.</p></div>
+      <div class="sol-step answer" hidden>a′ = 2,6 m/s² maldan gora</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="2" data-t="2" id="p-peraltea">
+    <div class="prob-head"><h3>Peraltearen angelua</h3><span class="src">Liburua · 66. or., 16. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">750 kg-ko auto batek 160 m-ko kurbadura-erradioko kurba bat hartzen du 90 km/h-ko abiaduraz. Zein izan behar da peraltearen angelua, errepideak autoari egiten dion indarra normala soilik izan dadin?</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Indarrak</span><p>$N$ (planoarekiko perpendikularra, $\theta$ okertuta) eta $mg$. Bertikalean: $N\cos\theta=mg$. Horizontalean, zentrorantz: $N\sin\theta=mv^2/R$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Zatitu</span><p>$\tan\theta=\dfrac{v^2}{Rg}=\dfrac{25^2}{160\cdot9{,}8}=0{,}399$ → $\theta=21{,}7°$. Masa ez da behar!</p></div>
+      <div class="sol-step answer" hidden>θ ≈ 22°</div>
+    </div>
+  </article>
+
+  <!-- ===================== 3. GAIA ===================== -->
+  <article class="prob" data-topic="3" data-t="3" data-exam="1" id="p-bala-bira">
+    <div class="prob-head"><h3>Bala blokean itsatsita eta bira osoa</h3><span class="src">Maiatza 2024-25 · 2. problema (2 p)</span></div>
+    <div class="prob-body">
+      <p class="stmt">$M=1$ kg-ko bloke puntual bat $l=1$ m-ko soka batetik eskegita dago eta goiko puntuaren inguruan bira egin dezake. $m=20$ g-ko bala bat jaurtitzen da blokearen kontra $v=600$ m/s-ko abiaduraz eta itsatsita geratzen da. a) Multzoaren abiadura talka ostean. b) Buelta osoa ematen duela suposatuz, sokaren tentsioa goiko puntuan. c) Talka ondoren buelta osoa emateko abiadura minimoa. ($g=10$)</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Talka: momentu lineala</span><p>Talka laburra eta guztiz inelastikoa: $mv=(m+M)V$ → $V=\dfrac{0{,}02\cdot600}{1{,}02}=11{,}76$ m/s. (Energia zinetikoa EZ da kontserbatzen talkan.)</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) Energia behetik gora</span><p>Talkaren ondoren tentsioak ez du lanik egiten → $E_{mek}$ konstantea: $\tfrac12V^2=\tfrac12V'^2+g\,2l$ → $V'=\sqrt{V^2-4gl}=9{,}92$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) Goiko puntuko dinamika</span><p>Goian $T$ eta pisua biak behera (zentrorantz): $T+(m+M)g=(m+M)\dfrac{V'^2}{l}$ → $T=1{,}02(98{,}4-10)=90{,}2$ N.</p></div>
+      <div class="sol-step" hidden><span class="lbl">4 · c) Muga-kasua T = 0</span><p>Goian $T=0$: $V'_{min}=\sqrt{gl}=3{,}16$ m/s. Energiaz behean: $V_{min}=\sqrt{V'^2_{min}+4gl}=\sqrt{5gl}=7{,}07$ m/s.</p></div>
+      <div class="sol-step answer" hidden>a) 11,76 m/s · b) ≈ 90 N · c) √(5gl) = 7,07 m/s</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" data-exam="1" id="p-malda-malguki">
+    <div class="prob-head"><h3>Malda, plano horizontala eta malgukia</h3><span class="src">Maiatza 2021-22 · 3. problema</span></div>
+    <div class="prob-body">
+      <p class="stmt">$m=100$ g-ko bloke bat 30°-ko malda batetik behera erortzen uzten da, $h=5$ m jaisten da, plano horizontalean irristatzen da eta $k=1000$ N/m-ko malguki bat jotzen du. a1) Abiadura malgukira iristean, marruskadurarik gabe. a2) Berdin, maldan bakarrik marruskadura badago ($\mu_d=0{,}37$). b1, b2) Zenbat konprimatzen da malgukia bi kasuetan? ($g=10$)</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a1) Energia kontserbatzen da</span><p>$mgh=\tfrac12mv^2$ → $v=\sqrt{2gh}=10$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a2) Marruskaduraren lana</span><p>Maldan: $N=mg\cos30°$, ibilitako luzera $d=h/\sin30°=10$ m. $W_r=-\mu_dmg\cos30°\,d=-0{,}37\cdot1\cdot0{,}866\cdot10=-3{,}20$ J.<br>$W_{ez\text{-}kons}=\Delta E_{mek}$: $\tfrac12mv^2=mgh+W_r=5-3{,}20=1{,}80$ J → $v=6{,}0$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) Konpresioa</span><p>Plano horizontala marruskadurarik gabe: $\tfrac12mv^2=\tfrac12kx^2$ → $x=v\sqrt{m/k}=v\cdot0{,}01$. b1) $x=10$ cm; b2) $x=6$ cm.</p></div>
+      <div class="sol-step answer" hidden>a1) 10 m/s · a2) 6 m/s · b1) 10 cm · b2) 6 cm</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" data-exam="1" id="p-lera">
+    <div class="prob-head"><h3>Lera maldan behera</h3><span class="src">Maiatza 2023-24 · 5. problema (2 p)</span></div>
+    <div class="prob-body">
+      <p class="stmt">20 kg-ko lera bat 30°-ko malda batetik behera irristatzen da, $H=20$ m-ko altueratik eta geldiunetik. Beheko puntuan 16 m/s darama. a) Zoruarekiko marruskadura arbuiagarria al da? Ez bada, kalkulatu koefizientea. b) Azelerazioa eta jaitsieraren denbora. c) Gero $\mu_d=0{,}2$-ko plano horizontala badago, zenbat ibiliko da gelditu arte? ($g=10$)</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Energiak konparatu</span><p>$mgH=4000$ J baina $\tfrac12mv^2=2560$ J. 1440 J galdu dira → marruskadura <b>ez</b> da arbuiagarria.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) μ</span><p>$|W_r|=\mu mg\cos30°\cdot d$, $d=H/\sin30°=40$ m → $\mu=\dfrac{1440}{20\cdot10\cdot0{,}866\cdot40}=0{,}21$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) Zinematika</span><p>HZUA: $v^2=2ad$ → $a=\dfrac{256}{80}=3{,}2\ \text{m/s}^2$; $t=v/a=5$ s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">4 · c) Plano horizontala</span><p>$\mu_dmg\,x=\tfrac12mv^2$ → $x=\dfrac{v^2}{2\mu_dg}=\dfrac{256}{4}=64$ m.</p></div>
+      <div class="sol-step answer" hidden>a) ez; μ ≈ 0,21 · b) 3,2 m/s², 5 s · c) 64 m</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" data-exam="1" id="p-helmuga">
+    <div class="prob-head"><h3>Helmuga-marra eta talka elastikoa</h3><span class="src">Maiatza 2018-19 · 4. problema</span></div>
+    <div class="prob-body">
+      <p class="stmt">$m=0{,}8$ kg-ko objektua horizontalki jaurtitzen da plano horizontal batean ($\mu=0{,}02$). 6 m/s-z jaurtiz gero, helmuga-marra baino 2,37 m lehenago gelditzen da. Bigarren masa berdin bat jaurtitzen da eta lehenengoarekin talka egiten du aurrez aurre. a) Helmugarainoko distantzia. b) Talka erabat elastikoa bada, zer abiaduraz jaurti behar da bigarrena lehenak marra atzeman dezan? ($g=9{,}8$)</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Lan-energia</span><p>$-\mu mg\,d=0-\tfrac12mv_0^2$ → $d=\dfrac{v_0^2}{2\mu g}=\dfrac{36}{0{,}392}=91{,}84$ m. Marra: $D=91{,}84+2{,}37=94{,}21$ m.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) Talka elastikoa, masa berdinak</span><p>$\vec p$ eta $E_z$ kontserbatuz, masa berdinekin abiadurak trukatzen dira: geldi zegoen lehenak bigarrenaren abiadura hartzen du, eta bigarrena geldi geratzen da.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) Abiadura beharrezkoa</span><p>Lehenak 2,37 m gehiago egin behar ditu, beraz talkaren ondoren $u=\sqrt{2\mu g\cdot2{,}37}=0{,}96$ m/s behar du. Bigarrenak 91,84 m egin behar ditu talka-punturaino eta $u$ abiadurarekin iritsi: $v_2^2=u^2+2\mu g\cdot91{,}84$ → $v_2=6{,}08$ m/s. (Hau da $\sqrt{2\mu gD}$: masa bakar batek D osoa egingo balu bezala.)</p></div>
+      <div class="sol-step answer" hidden>a) 94,21 m · b) ≈ 6,08 m/s</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" data-exam="1" id="p-neska">
+    <div class="prob-head"><h3>Neska plataforma batera salto egiten</h3><span class="src">Maiatza 2021-22 · 2. problema</span></div>
+    <div class="prob-body">
+      <p class="stmt">30 kg-ko neska batek 2 m/s-ko abiaduraz salto egiten du horizontalki eta geldi dagoen 50 kg-ko plataforma batera erortzen da. Irristatu egiten da plataforma gainean ($\mu_d=0{,}2$) baina ez da ateratzen. Zorua izoztuta dago (marruskadurarik gabe). a) Multzoaren azken abiadura. b) Irristatzearen iraupena $t_1$. c) Plataformaren desplazamendua $t_1$-ean. d) Marruskadurak barreiatutako energia. ($g=10$)</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Sistema: neska + plataforma</span><p>Horizontalean kanpo-indarrik ez → $p_x$ kontserbatzen da (marruskadura barne-indarra da!). $30\cdot2=80V$ → $V=0{,}75$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) Bakoitzaren azelerazioa</span><p>Neska: $a=-\mu_dg=-2\ \text{m/s}^2$. Plataforma: $A=\dfrac{\mu_dmg}{M}=\dfrac{60}{50}=1{,}2\ \text{m/s}^2$. Irristatzea amaitzen da abiadurak berdintzean: $2-2t_1=1{,}2t_1$ → $t_1=0{,}625$ s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · c) Plataformaren desplazamendua</span><p>$X=\tfrac12At_1^2=\tfrac12\cdot1{,}2\cdot0{,}625^2=0{,}234$ m.</p></div>
+      <div class="sol-step" hidden><span class="lbl">4 · d) Energia</span><p>$E_{z,i}=\tfrac12\cdot30\cdot4=60$ J; $E_{z,f}=\tfrac12\cdot80\cdot0{,}75^2=22{,}5$ J → 37,5 J barreiatu dira.</p></div>
+      <div class="sol-step answer" hidden>a) 0,75 m/s · b) 0,625 s · c) 0,234 m · d) 37,5 J</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" data-exam="1" id="p-pista-A">
+    <div class="prob-head"><h3>Pistaren indarra A puntuan</h3><span class="src">Maiatza 2019-20 · 4A</span></div>
+    <div class="prob-body">
+      <p class="stmt">$m=3$ kg-ko objektua frikziorik gabe labaintzen da pista batetik: arrapala, zati horizontala eta $R=1{,}5$ m-ko laurden zirkular bat gorantz. A puntua arkuaren goiko muturrean dago (altuera $R$, arkua bertikal bihurtzen den tokia). Objektua $H=1{,}7$ m-tik erortzen uzten bada, zein da pistaren indarra A-n? ($g=10$)</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Energia</span><p>$mgH=\tfrac12mv_A^2+mgR$ → $v_A^2=2g(H-R)=4\ \text{m}^2/\text{s}^2$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Dinamika A-n</span><p>A-n pista bertikala da: normala horizontala eta zentrorantz; pisua tangentziala. Norabide normalean: $N_A=m\dfrac{v_A^2}{R}=\dfrac{3\cdot4}{1{,}5}=8$ N.</p></div>
+      <div class="sol-step answer" hidden>N_A = 8 N</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" data-exam="1" id="p-biskosoa">
+    <div class="prob-head"><h3>Higidura zirkularra marruskadura biskosoarekin</h3><span class="src">Maiatza 2020-21 · 2. problema (2 p)</span></div>
+    <div class="prob-body">
+      <p class="stmt">Marruskadurarik gabeko mahai horizontal batean, partikula bat $l$ luzerako soka batez O puntura lotuta dago eta $l$ erradioko zirkulua egiten du $v_0$ abiaduraz. a) Hasierako tentsioa. b) Airearen marruskadura $-Kv$ bada, higidura tangentzialaren ekuazioa eta $v(t)$. c) $a_t(t)$ eta $a_n(t)$. d) Tentsioa eta momentu angeluarra konstanteak al dira? e) Indarren momentuak O-rekiko; egiaztatu momentu angeluarraren teorema.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) eta b)</span><p>a) $T_0=mv_0^2/l$. b) Tangentzialean: $m\dfrac{dv}{dt}=-Kv$ → $\displaystyle\int_{v_0}^v\frac{dv}{v}=-\frac Km\int_0^tdt$ → $v(t)=v_0e^{-Kt/m}$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · c) Osagai intrintsekoak</span><p>$a_t=\dot v=-\dfrac{K}{m}v_0e^{-Kt/m}$; $a_n=\dfrac{v^2}{l}=\dfrac{v_0^2}{l}e^{-2Kt/m}$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · d) Ez dira konstanteak</span><p>$T=ma_n=\dfrac{mv_0^2}{l}e^{-2Kt/m}$; $L_O=l\,m\,v=lmv_0e^{-Kt/m}$ (mahaiarekiko perpendikularra).</p></div>
+      <div class="sol-step" hidden><span class="lbl">4 · e) Teorema egiaztatu</span><p>Tentsioa O-tik pasatzen da ($\vec r\parallel\vec T$): momentu nulua. Pisua eta normala elkar ezabatzen dira. Marruskadurak bakarrik: $M_O=-lKv$. Eta $\dfrac{dL_O}{dt}=lm\left(-\dfrac Km\right)v_0e^{-Kt/m}=-lKv$ ✓.</p></div>
+      <div class="sol-step answer" hidden>v = v₀e^(−Kt/m) · T ∝ e^(−2Kt/m) · L ∝ e^(−Kt/m) · M_O = dL_O/dt = −lKv</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" data-exam="1" id="p-katilu-irten">
+    <div class="prob-head"><h3>Katilutik irteten den partikula</h3><span class="src">Kontrola 2025-10-30 · 3. ariketa (3 p)</span></div>
+    <div class="prob-body">
+      <p class="stmt">Marruskadurarik gabeko katilu zirkular bat, $R=0{,}5$ m, bertikalarekin $\varphi=60°$-ko arkua egiten duena. $m=200$ g-ko partikula hondoan dago. a) Hondoan beharko duen abiadura minimoa katilutik ateratzeko. b) Hondoko abiadura, irtetean $L=2$ m-ra lurra jo dezan P puntuan. c) Zer angelurekin jotzen du lurra? d) Abiaduraren osagai horizontala mantentzen dela eta $\mu=0{,}3$-rekin labaintzen dela suposatuz, zenbat ibiltzen da gelditu arte?</p>
+      <div class="warn"><b>Suposizioa:</b> ebazpen honetan katiluaren ertza eta P puntua altuera berean daudela hartu dugu ($g=9{,}8$). Irudian beste altuera bat badago, aldatu (b) atalean jaurtiketaren ekuazioa.</div>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Ertzera iritsi</span><p>Ertzaren altuera hondotik: $h=R(1-\cos60°)=0{,}25$ m. Ertzera $v=0$-rekin iritsi: $\tfrac12mv^2=mgh$ → $v_{min}=\sqrt{2gh}=2{,}21$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) Irteera-abiadura</span><p>Ertzean abiadura katiluaren tangentea da: horizontalarekin 60° gora. Altuera bereko jaurtiketa: $L=\dfrac{v_e^2\sin120°}{g}$ → $v_e=\sqrt{\dfrac{2\cdot9{,}8}{0{,}866}}=4{,}76$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) Hondoko abiadura</span><p>Energia: $v_b^2=v_e^2+2gh=22{,}6+4{,}9$ → $v_b=5{,}25$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">4 · c) eta d)</span><p>c) Simetriagatik 60°-rekin jotzen du lurra (horizontalaren azpitik). d) $v_x=v_e\cos60°=2{,}38$ m/s; $\mu mg\,x=\tfrac12mv_x^2$ → $x=\dfrac{v_x^2}{2\mu g}=0{,}96$ m.</p></div>
+      <div class="sol-step answer" hidden>a) 2,21 m/s · b) 5,25 m/s · c) 60° · d) 0,96 m</div>
+    </div>
+  </article>
+
+  <!-- ===================== 4. GAIA ===================== -->
+  <article class="prob" data-topic="4" data-t="4" data-exam="1" id="p-katilu-osz">
+    <div class="prob-head"><h3>Partikula katilu zirkularrean: oszilazio txikiak</h3><span class="src">Kontrola 2025-10-30 · 2. ariketa (4 p)</span></div>
+    <div class="prob-body">
+      <p class="stmt">$m=200$ g-ko partikula bat marruskadurarik gabeko katilu zirkular baten barruan dago, $R=50$ cm. Bertikalarekin $\theta_0=20°$ (0,35 rad) angelutik geldik askatzen da. Oszilazio txikiak suposatuz: a) Frogatu HHS dela; lortu $\omega_0$ eta periodoa. Nola aldatzen dira masa bikoizten bada? b) Anplitude angeluarra eta hasierako fasea; idatzi $\theta(t)$, $\dot\theta(t)$, $\ddot\theta(t)$. c) Normal maximoa eta minimoa; energia potentziala, zinetikoa eta mekanikoa edozein puntutan.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Ekuazioa</span><p>Indarrak: $N$ (zentrorantz) eta $mg$. Tangentzialean: $mR\ddot\theta=-mg\sin\theta\approx-mg\theta$ → $\ddot\theta+\dfrac gR\theta=0$: HHS.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) ω₀ eta T</span><p>$\omega_0=\sqrt{g/R}=\sqrt{9{,}8/0{,}5}=4{,}43$ rad/s; $T=2\pi/\omega_0=1{,}42$ s. Masa ez da agertzen → <b>ez dira aldatzen</b>.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) Hasierako baldintzak</span><p>$\theta=\theta_0\sin(\omega_0t+\varphi)$. $t=0$: $\theta=0{,}35$ eta $\dot\theta=0$ → $\cos\varphi=0$, $\sin\varphi=1$ → $\varphi=\pi/2$, anplitudea 0,35 rad.<br>$\theta(t)=0{,}35\sin(4{,}43t+\pi/2)$ rad<br>$\dot\theta(t)=1{,}55\cos(4{,}43t+\pi/2)$ rad/s<br>$\ddot\theta(t)=-6{,}86\sin(4{,}43t+\pi/2)$ rad/s²</p></div>
+      <div class="sol-step" hidden><span class="lbl">4 · c) Normala</span><p>Normalean: $N-mg\cos\theta=mv^2/R$. Minimoa muturretan ($v=0$): $N_{min}=mg\cos\theta_0=1{,}84$ N. Maximoa behean: $v^2=2gR(1-\cos\theta_0)=0{,}591$ → $N_{max}=mg+mv^2/R=2{,}20$ N.</p></div>
+      <div class="sol-step" hidden><span class="lbl">5 · c) Energiak</span><p>Hondoa erreferentzia: $E_p=mgR(1-\cos\theta)\approx\tfrac12mgR\theta^2$. $E_{mek}=mgR(1-\cos\theta_0)=0{,}059$ J (konstantea). $E_z=E_{mek}-E_p=\tfrac12mR^2\dot\theta^2$.</p></div>
+      <div class="sol-step answer" hidden>ω₀ = 4,43 rad/s · T = 1,42 s · φ = π/2 · N_max = 2,20 N · N_min = 1,84 N · E_{mek} = 0,059 J</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="4" data-t="4" data-exam="1" id="p-bi-malguki">
+    <div class="prob-head"><h3>Masa bat bi malguki bertikalen artean</h3><span class="src">Maiatza 2024-25 · 3. problema (2 p)</span></div>
+    <div class="prob-body">
+      <figure class="diagram prob-figure">
+        <svg viewBox="0 0 200 230" role="img" aria-label="Masa bat sabaiko eta zoruko malgukien artean, H distantzia">
+          <line x1="40" y1="14" x2="160" y2="14" class="ln"/><line x1="40" y1="216" x2="160" y2="216" class="ln"/>
+          <polyline points="100,14 100,24 88,32 112,44 88,56 112,68 88,80 112,92 100,100 100,108" class="ln"/>
+          <rect x="82" y="108" width="36" height="26" class="box"/><text x="94" y="126" font-size="13">m</text>
+          <polyline points="100,134 100,144 88,152 112,164 88,176 112,188 88,200 100,206 100,216" class="ln"/>
+          <line x1="170" y1="14" x2="170" y2="216" class="ln-m"/><text x="176" y="118" font-style="italic">H</text>
+          <text x="60" y="64" font-style="italic" font-size="13">k</text><text x="60" y="180" font-style="italic" font-size="13">k</text>
+        </svg>
+      </figure>
+      <p class="stmt">$m=200$ g-ko masa bat bi malgukiri lotuta dago (sabaia eta zorua), biak $l_0=25$ cm eta $k=10$ N/m. Orekan biak luzatuta daude eta paretak $H=75$ cm-ra daude. a) Malguki bakoitzaren elongazioa orekan. Masa 4 cm tiratzen da behera eta askatzen da: b) frogatu HHS dela eta kalkulatu $\omega_0$; c) abiadura eta azelerazio maximoak. ($g=10$)</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Oreka</span><p>Goikoak gora tiratzen du $k(l_1-l_0)$; behekoak behera $k(l_2-l_0)$ (luzatuta dago). Oreka: $k(l_1-l_0)=k(l_2-l_0)+mg$ → $l_1-l_2=mg/k=0{,}2$ m. Gainera $l_1+l_2=0{,}75$ m.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) Ebatzi</span><p>$l_1=47{,}5$ cm → goikoaren elongazioa 22,5 cm; $l_2=27{,}5$ cm → behekoarena 2,5 cm.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) HHS</span><p>$y$ behera desplazatuz: goikoa $y$ gehiago luzatzen da (gorako indarra $ky$ hazten da) eta behekoa $y$ gutxiago luzatuta geratzen da (beherako tiraketa $ky$ txikitzen da). Bi aldaketek gorantz egiten dute. Oreka-terminoak ezabatuz: $m\ddot y=-2ky$ → $\omega_0=\sqrt{2k/m}=\sqrt{100}=10$ rad/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">4 · c) Maximoak</span><p>$A=0{,}04$ m: $v_{max}=A\omega_0=0{,}4$ m/s; $a_{max}=A\omega_0^2=4\ \text{m/s}^2$.</p></div>
+      <div class="sol-step answer" hidden>a) 22,5 cm eta 2,5 cm · b) ω₀ = 10 rad/s · c) 0,4 m/s; 4 m/s²</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="4" data-t="4" data-exam="1" id="p-haurra">
+    <div class="prob-head"><h3>Haurra bloke oszilatzaile baten gainean</h3><span class="src">Maiatza 2018-19 · 3. problema</span></div>
+    <div class="prob-body">
+      <p class="stmt">Haur bat malguki horizontal bati lotutako bloke baten gainean dago; biek 4 s-ko periodoz oszilatzen dute. a) Anplitudea 2 m bada, zein da haurraren azelerazio maximoa? b) Haurraren eta blokearen arteko $\mu_s=0{,}25$ bada, zein da anplitude maximoa haurra irristatu gabe? Segurua da?</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a)</span><p>$\omega_0=2\pi/T=\pi/2$ rad/s; $a_{max}=\omega_0^2A=\dfrac{\pi^2}{4}\cdot2=4{,}93\ \text{m/s}^2$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) Marruskadura estatikoaren muga</span><p>Haurraren azelerazioa marruskadurak ematen du: $ma\le\mu_smg$ → $\omega_0^2A\le\mu_sg$ → $A_{max}=\dfrac{\mu_sg}{\omega_0^2}=\dfrac{2{,}45}{2{,}47}\approx1$ m.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · Ondorioa</span><p>2 m-ko anplitudea 1 m baino handiagoa da → haurra irristatuko litzateke: <b>ez da segurua</b>.</p></div>
+      <div class="sol-step answer" hidden>a) 4,93 m/s² · b) ≈ 1 m → ez da segurua</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="4" data-t="4" data-exam="1" id="p-ez-ep">
+    <div class="prob-head"><h3>Noiz dira berdinak energia zinetikoa eta potentziala?</h3><span class="src">Maiatza 2019-20 · 5A</span></div>
+    <div class="prob-body">
+      <p class="stmt">Partikula bat HHSz mugitzen da, $A=5$ cm-ko anplitudearekin. Zein elongaziotan dira berdinak energia zinetikoa eta potentziala?</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Energia osoa</span><p>$E_{mek}=\tfrac12kA^2$ konstantea. $E_z=E_p$ bada, bakoitza $E_{mek}/2$ da.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Ebatzi</span><p>$\tfrac12kx^2=\tfrac14kA^2$ → $x=\pm\dfrac{A}{\sqrt2}=\pm3{,}54$ cm.</p></div>
+      <div class="sol-step answer" hidden>x = ± A/√2 = ± 3,54 cm</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="4" data-t="4" id="p-hasierako">
+    <div class="prob-head"><h3>Anplitudea eta hasierako fasea</h3><span class="src">Liburua · 100. or., 6. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Masa bat ($m=3$ kg) malguki horizontal bati lotuta dago ($k=12$ N/m), marruskadurarik gabe. a) Idatzi ekuazio diferentziala eta $x(t)$. b) $x_0=-3$ m eta $v_0=0$ badira: anplitudea, hasierako fasea eta energia mekanikoa. c) Berdin $x_0=1$ m eta $v_0=-1$ m/s-rekin.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a)</span><p>$\ddot x+\dfrac km x=0$, $\omega_0=\sqrt{12/3}=2$ rad/s; $x=A\sin(2t+\varphi)$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b)</span><p>$v_0=0$ → $A=|x_0|=3$ m. $\sin\varphi=-1$ → $\varphi=270°$. $E=\tfrac12kA^2=54$ J.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · c) Koadrantea kontuz</span><p>$A=\sqrt{1^2+(1/2)^2}=1{,}12$ m. $\sin\varphi=1/1{,}12=0{,}894\gt0$, $\cos\varphi=\dfrac{-1}{1{,}12\cdot2}=-0{,}447\lt0$ → 2. koadrantea: $\varphi=116{,}6°$. $E=\tfrac12\cdot12\cdot1{,}25=7{,}5$ J.</p></div>
+      <div class="sol-step answer" hidden>b) A = 3 m, φ = 270°, E = 54 J · c) A = 1,12 m, φ = 117°, E = 7,5 J</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="4" data-t="4" id="p-hhs-energia">
+    <div class="prob-head"><h3>Azelerazioa, indarra eta energiak HHSn</h3><span class="src">Liburua · 100. or., 5. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">0,5 kg-ko partikula batek HHS egiten du malguki bati lotuta, $T=0{,}1$ s eta $A=10$ cm. Kalkula azelerazioaren eta indar berreskuratzailearen moduluak, eta energia potentziala eta zinetikoa: a) orekatik pasatzean; b) elongazio maximoan; c) orekatik 5 cm-ra.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Datuak</span><p>$\omega_0=2\pi/T=62{,}8$ rad/s; $k=m\omega_0^2=1974$ N/m; $E_{mek}=\tfrac12kA^2=9{,}87$ J.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a) eta b)</span><p>a) $x=0$: $a=0$, $F=0$, $E_p=0$, $E_z=9{,}87$ J. b) $x=A$: $a=\omega_0^2A=395\ \text{m/s}^2$, $F=ma=197$ N, $E_p=9{,}87$ J, $E_z=0$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · c) x = 5 cm</span><p>$a=\omega_0^2x=197\ \text{m/s}^2$, $F=98{,}7$ N, $E_p=\tfrac12kx^2=2{,}47$ J, $E_z=E_{mek}-E_p=7{,}40$ J.</p></div>
+      <div class="sol-step answer" hidden>a) 0, 0, 0, 9,87 J · b) 395 m/s², 197 N, 9,87 J, 0 · c) 197 m/s², 98,7 N, 2,47 J, 7,40 J</div>
+    </div>
+  </article>
+
+  <!-- ===================== LIBURUKO ARIKETA GEHIAGO ===================== -->
+  <article class="prob" data-topic="1" data-t="1" id="p-malabarista">
+    <div class="prob-head"><h3>Malabarista eta sabaia</h3><span class="src">Liburua · 46. or., 2. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Malabarista batek 3 m-ko altuera erabilgarria du eskuetatik gora. a) Zein da bolei eman diezaiekeen abiadura maximoa sabaia jo gabe? b) Zenbat denbora behar du bola batek eskuetara itzultzeko? c) Bi jaurtiketaren artean gutxienez 0,3 s behar baditu, zenbat bolarekin ari daiteke aldi berean gehienez?</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Goian v = 0</span><p>HZUA bertikalean: $v^2-v_0^2=2a\Delta y$ → $0-v_0^2=-2g\cdot3$ → $v_0=\sqrt{2\cdot9{,}8\cdot3}=7{,}67$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) Joan-etorria</span><p>Igotzeko denbora $v_0/g=0{,}78$ s; joan-etorria bikoitza: $t=2v_0/g=1{,}56$ s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · c) Bola kopurua</span><p>Bola bat airean 1,56 s dago eta 0,3 s-ro jaurtitzen du: $1{,}56/0{,}3=5{,}2$ → gehienez <b>5 bola</b>.</p></div>
+      <div class="sol-step answer" hidden>a) 7,67 m/s · b) 1,56 s · c) 5 bola</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="1" data-t="1" id="p-gurpila">
+    <div class="prob-head"><h3>Gurpil baten 3100 bira</h3><span class="src">Liburua · 46. or., 3. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Gurpil bat geldiunetik hasten da eta uniformeki azeleratzen da 6 s-tan 200 bira/min izan arte. Denbora batez abiadura horrekin biratzen du, gero balaztatzen da eta 5 min-tan gelditzen da. Guztira 3100 bira eman ditu. Kalkulatu errotazio-denbora osoa eta angelu osoa.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Unitateak</span><p>$\omega=200\cdot\dfrac{2\pi}{60}=20{,}9$ rad/s. Angelu osoa: $3100\cdot2\pi=1{,}95\times10^4$ rad.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Azeleratzen eta balaztatzen</span><p>α konstantea denean, $\Delta\varphi=\tfrac12(\omega_0+\omega)t$: azeleratzean $\tfrac12\cdot20{,}9\cdot6=62{,}8$ rad; balaztatzean $\tfrac12\cdot20{,}9\cdot300=3142$ rad.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · Abiadura konstantean</span><p>Gainerakoa: $19478-62{,}8-3142=16274$ rad → $t=16274/20{,}9=777$ s. Denbora osoa: $6+777+300=1083$ s $=18{,}1$ min.</p></div>
+      <div class="sol-step answer" hidden>18,1 min · 1,95·10⁴ rad</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="1" data-t="1" id="p-zentrif">
+    <div class="prob-head"><h3>Zentrifugagailua</h3><span class="src">Liburua · 46. or., 4. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Zentrifugagailu batek 15000 bira/min-z biratzen du. a) Kalkulatu ardatzetik 15 cm-ra dagoen laginaren abiadura lineala eta azelerazio normala. b) Abiadura hori lortzeko 90 s-tan azeleratu da pausagunetik (aₜ konstantea). Kalkulatu aₜ.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a)</span><p>$\omega=15000\cdot\dfrac{2\pi}{60}=1571$ rad/s; $v=R\omega=236$ m/s; $a_n=R\omega^2=3{,}7\times10^5\ \text{m/s}^2$ (g baino 37 000 aldiz gehiago!).</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b)</span><p>$v=v_0+a_tt$ → $a_t=\dfrac{236}{90}=2{,}6\ \text{m/s}^2$.</p></div>
+      <div class="sol-step answer" hidden>a) 236 m/s; 3,7·10⁵ m/s² · b) 2,6 m/s²</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="2" data-t="2" id="p-igogailua">
+    <div class="prob-head"><h3>Igogailua eta zama</h3><span class="src">Liburua · 62. or., 1. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Igogailu-kabinak 1200 kg ditu eta 4 m/s-ko erregimen-abiaduraz ibiltzen da; martxan jartzean edo gelditzean 1 s behar du abiadura aldatzeko. 600 kg-ko zama du. Kalkulatu: a) zamak zoruari egiten dion indarra gorantz irtetean; b) erregimen-abiaduran; c) gelditzean (gora zihoala); d) a kasuan kablearen tentsioa; e) beherantz hutsik irtetean kablearen tentsioa. $g=10$.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Azelerazioa</span><p>$a=\Delta v/\Delta t=4\ \text{m/s}^2$. Zamaren gainean: $N$ gora eta $mg$ behera → $N-mg=ma$ (gora positibo).</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · a), b), c)</span><p>a) $N=600(10+4)=8400$ N. b) $a=0$: $N=6000$ N. c) Balaztatzen gora zihoala → $a=-4$: $N=600\cdot6=3600$ N.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · d) eta e) Tentsioa</span><p>Sistema osoa: d) $T=1800(10+4)=25200$ N. e) Hutsik beherantz abiatzean $a=-4$: $T=1200(10-4)=7200$ N.</p></div>
+      <div class="sol-step answer" hidden>a) 8400 N · b) 6000 N · c) 3600 N · d) 25 200 N · e) 7200 N</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="2" data-t="2" id="p-bi-bloke">
+    <div class="prob-head"><h3>Bloke bat beste baten gainean</h3><span class="src">Liburua · 65. or., 12. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">3 kg-ko blokea 5 kg-ko baten gainean dago; behekoak ez du marruskadurarik zoruarekin; bien artean $\mu_s=0{,}2$ eta $\mu_d=0{,}1$. a) Zenbateko indarra aplika dakioke gehienez behekoari biak elkarrekin mugitzeko? Eta goikoari? b) Azelerazioa kasu bakoitzean. c) Indar handiagoarekin, zein da bultzatzen ez den blokearen azelerazioa? $g=10$.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Behekoa bultzatuz</span><p>Goikoa marruskadurak bakarrik azeleratzen du: $a_{max}=\mu_sg=2\ \text{m/s}^2$. Multzoa: $F=8\cdot2=16$ N.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Goikoa bultzatuz</span><p>Orain behekoa marruskadurak arrastatzen du: $a_{max}=\dfrac{\mu_s\cdot3\cdot10}{5}=1{,}2\ \text{m/s}^2$ → $F=8\cdot1{,}2=9{,}6$ N.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · c) Irristatzen</span><p>Marruskadura dinamikoa: goikoa $a=\mu_dg=1{,}0\ \text{m/s}^2$; behekoa $a=\dfrac{0{,}1\cdot30}{5}=0{,}6\ \text{m/s}^2$.</p></div>
+      <div class="sol-step answer" hidden>a) 16 N; 9,6 N · b) 2 m/s²; 1,2 m/s² · c) 1,0 m/s²; 0,6 m/s²</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="2" data-t="2" id="p-peralte-marr">
+    <div class="prob-head"><h3>Kurba peraltatua marruskadurarekin</h3><span class="src">Liburua · 67. or., 17. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Kurba batek 150 m-ko erradioa eta 10°-ko peraltea du. 800 kg-ko auto batek 85 km/h-ra hartzen du, irristatu gabe. Kalkulatu: a) normala; b) marruskadura-indarra; c) $\mu_s$-ren balio minimoa.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Indar zentripetua</span><p>$v=23{,}6$ m/s; $F_{zent}=m\dfrac{v^2}{R}=2973$ N, horizontala eta zentrorantz.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Ardatz egokiak: maldarekiko</span><p>Abiadura ideala baino handiagoa denez, marruskadura maldan behera. Perpendikularrean: $N=mg\cos10°+F_{zent}\sin10°=8237$ N. Paraleloan: $F_r=F_{zent}\cos10°-mg\sin10°=1567$ N.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · μ minimoa</span><p>$F_r\le\mu_sN$ → $\mu_s\ge\dfrac{1567}{8237}=0{,}19\approx0{,}20$.</p></div>
+      <div class="sol-step answer" hidden>a) 8,2 kN · b) 1,6 kN · c) 0,20</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" id="p-lana-malda">
+    <div class="prob-head"><h3>Indar bakoitzaren lana maldan</h3><span class="src">Liburua · 81. or., 3. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">6 kg-ko bloke bat 60°-ko maldan behera irristatzen da ($\mu_d=0{,}1$). a) Kalkulatu indar bakoitzaren lana maldan 2 m irristatzean. b) Lan osoa. c) Abiadura 2 m ondoren pausagunetik abiatzen bada; d) 2 m/s-z abiatzen bada. $g=10$.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Lanak</span><p>Pisua: $W_P=mg\,d\sin60°=6\cdot10\cdot2\cdot0{,}866=104$ J. Marruskadura: $W_r=-\mu_dmg\cos60°\,d=-6$ J. Normala: $W_N=0$ (perpendikularra).</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) eta teorema</span><p>$W_{osoa}=98$ J $=\Delta E_z$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · c) eta d)</span><p>c) $\tfrac12\cdot6\,v^2=98$ → $v=5{,}7$ m/s. d) $\tfrac12\cdot6(v^2-4)=98$ → $v=6{,}05$ m/s.</p></div>
+      <div class="sol-step answer" hidden>a) 104 J, −6 J, 0 · b) 98 J · c) 5,7 m/s · d) 6,05 m/s</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" id="p-potentzia">
+    <div class="prob-head"><h3>Autoaren potentzia</h3><span class="src">Liburua · 80. or., 2. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">800 kg-ko auto batek 0-tik 100 km/h-ra azeleratzen du 8 s-tan. a) Potentzia konstantea bada, zein da motorraren batez besteko potentzia? b) Zein abiadura du 4 s-ra? Marruskadura arbuiatu.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) P = dW/dt</span><p>$P$ konstantea → $W=Pt=\Delta E_z$. $v=27{,}8$ m/s: $P=\dfrac{\tfrac12\cdot800\cdot27{,}8^2}{8}=38{,}6$ kW.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) 4 s-ra</span><p>$\tfrac12mv^2=P\cdot4$ → $v=\sqrt{\dfrac{2\cdot38580\cdot4}{800}}=19{,}6$ m/s $=70{,}7$ km/h. (Ez da 50 km/h: potentzia konstantean azelerazioa txikitzen doa.)</p></div>
+      <div class="sol-step answer" hidden>a) 38,6 kW · b) 70,7 km/h</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" id="p-torque">
+    <div class="prob-head"><h3>Indar-momentu konstantea sokako objektuan</h3><span class="src">Liburua · 80. or., 1. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">100 g-ko objektua plano horizontalean biratzen da ardatz finko baten inguruan, 50 cm-ko soka batez. Pausagunetik, $M=0{,}5$ N·m-ko indar-momentu konstantea aplikatzen zaio 5 s-z. a) Abiadura eta sokaren tentsioa aldiune horretan. b) Zenbat bira eman ditu?</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Momentu angeluarraren teorema</span><p>$\dfrac{dL_0}{dt}=M_0$ konstantea → $L_0=M_0t=2{,}5$ kg·m²/s. Zirkuluan $L_0=rmv$ → $v=\dfrac{2{,}5}{0{,}5\cdot0{,}1}=50$ m/s.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Tentsioa</span><p>Tentsioa da indar zentripetua: $T=m\dfrac{v^2}{r}=500$ N.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · b) Birak</span><p>$\omega=v/r$ linealki hazten da: $\alpha=\dfrac{M}{mr^2}=20\ \text{rad/s}^2$; $\varphi=\tfrac12\alpha t^2=250$ rad $=39{,}8$ bira.</p></div>
+      <div class="sol-step answer" hidden>a) 50 m/s; 500 N · b) 39,8 bira</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="3" data-t="3" id="p-esfera">
+    <div class="prob-head"><h3>Esfera baten gainetik irristatzen</h3><span class="src">Liburua · 83. or., 8. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">$R$ erradioko esfera baten goiko puntuan partikula bat dago eta bultzada minimo batez irristatzen hasten da, marruskadurarik gabe. a) $E_z(\theta)$. b) Normala $\theta$-ren menpe. c) Zein angelutan galtzen du kontaktua?</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) Energia</span><p>Konts. bakarrik → $\Delta E_{mek}=0$: jaitsiera $R(1-\cos\theta)$ → $E_z=mgR(1-\cos\theta)$, hau da, $v^2=2gR(1-\cos\theta)$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · b) Norabide normala</span><p>Zentrorantz: $mg\cos\theta-N=m\dfrac{v^2}{R}$ → $N=mg\cos\theta-2mg(1-\cos\theta)=mg(3\cos\theta-2)$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · c) N = 0</span><p>$\cos\theta=2/3$ → $\theta=48°$.</p></div>
+      <div class="sol-step answer" hidden>a) mgR(1−cosθ) · b) mg(3cosθ−2) · c) 48°</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="4" data-t="4" id="p-bi-puntu">
+    <div class="prob-head"><h3>Bi puntutatik anplitudea</h3><span class="src">Liburua · 99. or., 4. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Osziladore harmoniko batean, $x=6$ cm denean $v=2$ cm/s eta $x=8$ cm denean $v=1{,}5$ cm/s. Kalkulatu anplitudea, maiztasun angeluarra eta azelerazio maximoa.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · Energiatik v(x)</span><p>$E_{mek}$ kte → $v^2=\omega_0^2(A^2-x^2)$. Bi ekuazio: $4=\omega_0^2(A^2-36)$ eta $2{,}25=\omega_0^2(A^2-64)$.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · Kendu</span><p>$1{,}75=28\,\omega_0^2$ → $\omega_0=0{,}25$ rad/s; ordezkatuz $A^2=36+64=100$ → $A=10$ cm.</p></div>
+      <div class="sol-step" hidden><span class="lbl">3 · a<sub>max</sub></span><p>$a_{max}=A\omega_0^2=0{,}625\ \text{cm/s}^2$.</p></div>
+      <div class="sol-step answer" hidden>A = 10 cm · ω₀ = 0,25 rad/s · a_max = 0,625 cm/s²</div>
+    </div>
+  </article>
+
+  <article class="prob" data-topic="4" data-t="4" id="p-v-grafikoa">
+    <div class="prob-head"><h3>Abiaduraren grafikotik</h3><span class="src">Liburua · 101. or., 9. ariketa</span></div>
+    <div class="prob-body">
+      <p class="stmt">Osziladore harmoniko baten abiaduraren grafikoak 6 m/s-ko balio maximoa eta 2,5 s-ko periodoa ditu. Malgukiaren konstantea 150 N/m da. Kalkulatu: a) $\omega_0$; b) anplitudea; c) energia mekanikoa; d) masa.</p>
+      <div class="sol-step" hidden><span class="lbl">1 · a) eta b)</span><p>$\omega_0=2\pi/T=2{,}51$ rad/s. $v_{max}=A\omega_0$ → $A=6/2{,}51=2{,}39$ m.</p></div>
+      <div class="sol-step" hidden><span class="lbl">2 · c) eta d)</span><p>$E_{mek}=\tfrac12kA^2=427$ J. $\omega_0=\sqrt{k/m}$ → $m=k/\omega_0^2=23{,}7$ kg.</p></div>
+      <div class="sol-step answer" hidden>a) 2,51 rad/s · b) 2,39 m · c) ≈ 427 J · d) 23,7 kg</div>
+    </div>
+  </article>
+
+</section>

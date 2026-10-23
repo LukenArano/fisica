@@ -1,0 +1,107 @@
+<section class="view" id="oinarriak" data-t="2" hidden>
+  <header class="view-head">
+    <span class="eyebrow">2. gaia · zure apunteetan «4. gaia: indarrak»</span>
+    <h1>Mekanika klasikoaren oinarriak</h1>
+    <p class="lede">Zergatik mugitzen dira gauzak: Newtonen legeak, marruskadura, indar zentripetua eta sistema azeleratuak.</p>
+  </header>
+
+  <div class="warn"><b>Azterketan:</b> «Azaldu nola aplikatu behar den Newton-en 2. legea erreferentzia-sistema ez-inertzial batean» 2022-23an eta 2025eko kontrolean atera da (1,5 puntu). Problemetan: poleak, maldak marruskadurarekin, higidura zirkularra.</div>
+
+  <h2 id="newton"><span class="sec-num">2.1</span>Newtonen legeak</h2>
+  <div class="masonry" style="columns: 3 230px">
+    <div class="pin tint"><span class="n">1. LEGEA · INERTZIA</span><p style="margin:6px 0 0">Indarrik gabe, partikula geldi ($v=0$) edo HZUn ($v=$ kte) dago. Hori betetzen den sistemak: <span class="kw">inertzia-sistemak</span>.</p></div>
+    <div class="pin tint"><span class="n">2. LEGEA</span>$$\sum\vec F=m\,\vec a$$<p style="margin:0">Inertzia-sistema batean bakarrik.</p></div>
+    <div class="pin tint"><span class="n">3. LEGEA · AKZIO-ERREAKZIOA</span>$$\vec F_{12}=-\vec F_{21}$$<p style="margin:0">Gorputz <b>desberdinetan</b>: ez dira elkar ezabatzen.</p></div>
+  </div>
+
+  <h2 id="indarrak"><span class="sec-num">2.2</span>Marruskadura eta beste indarrak</h2>
+  <div class="mine">
+    <p style="margin:0"><b>Marruskadura</b> (irristatze-atalasea):</p>
+    <p style="margin:0">• Atalasea baino lehen (geldi): $F_r=F_{kanpo}$<br>• Atalasean: $F_r=\mu_s\,N$<br>• Atalasea ostean (irristatzen): $F_r=\mu_d\,N$</p>
+  </div>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>Indarra</th><th>Nola</th><th>Kontuz</th></tr></thead>
+    <tbody>
+      <tr><td>Pisua</td><td>$P=mg$, beherantz</td><td>Azterketa batzuetan $g=10$.</td></tr>
+      <tr><td>Normala</td><td>$N$ gainazalarekiko perpendikularra</td><td><b>Ez da beti $mg$.</b> Kontaktua galtzean $N=0$.</td></tr>
+      <tr><td>Tentsioa</td><td>$T$ sokan zehar</td><td>Polea ideala: $T$ berdina soka osoan.</td></tr>
+      <tr><td>Malgukia</td><td>$F=-kx$</td><td>Deformazioaren aurka.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="dcl"><span class="sec-num">2.3</span>Problemak ebazteko metodoa</h2>
+  <ol class="steps">
+    <li><b>Gorputz bakoitza bakartu</b> eta bere indar guztiak marraztu (pisua, normala, marruskadura, tentsioak).</li>
+    <li><b>Ardatzak aukeratu</b>: bat azelerazioaren norabidean (maldetan, maldarekiko paraleloa eta perpendikularra).</li>
+    <li><b>Newtonen 2. legea osagaika</b> gorputz bakoitzari: $\sum F_x=ma_x$, $\sum F_y=ma_y$.</li>
+    <li><b>Lotura-ekuazioak</b>: soka luzaezina → azelerazio berdinak (edo erlazionatuak).</li>
+    <li><b>Ebatzi eta egiaztatu</b> zeinuak eta unitateak.</li>
+  </ol>
+  <div class="mine"><p style="margin:0"><b>Gomendioak:</b> poleak idealak dira ($m_p=0$, $\mu=0$) → Newtonen 2. legea aplikatu gorputz bakoitzari.</p></div>
+  <div class="sim" id="sim-plano" data-sim="planoa">
+    <div class="sim-head"><b>Plano inklinatua: noiz hasten da irristatzen?</b><span>SIMULAZIOA</span></div>
+  </div>
+  <p class="legend"><span><i style="background:var(--c-f)"></i>pisua eta osagaiak</span><span><i style="background:var(--c-v)"></i>normala</span><span><i style="background:var(--c-a)"></i>marruskadura</span></p>
+  <p>Igo $\theta$ poliki: blokea geldi dagoen bitartean $F_r=mg\sin\theta$ (kanpoko indarra bezainbeste). $\tan\theta=\mu_s$ denean hasten da irristatzen, eta orduan $F_r=\mu_dN$.</p>
+
+  <h2 id="zirk-din"><span class="sec-num">2.4</span>Indar zentripetua</h2>
+  <div class="formula-box"><span class="tag">Zure apunteetako formula</span>
+    $$F_{zent}=m\,a_n=m\,\frac{v^2}{R}$$
+  </div>
+  <p>Ez da indar mota berri bat: norabide normaleko indarren batura da (tentsioa, normala, marruskadura, pisuaren osagaia…). Adibideak:</p>
+  <div class="two">
+    <figure class="diagram">
+      <svg viewBox="0 0 300 260" role="img" aria-label="Pendulu konikoa: tentsioa eta pisua, θ angelua bertikalarekin">
+        <line x1="90" y1="20" x2="210" y2="20" class="ln"/>
+        <line x1="150" y1="20" x2="150" y2="220" class="ln-m"/>
+        <line x1="150" y1="20" x2="240" y2="175" class="ln"/>
+        <ellipse cx="150" cy="175" rx="90" ry="20" class="ln-m"/>
+        <circle cx="240" cy="175" r="8" class="f-ink"/>
+        <line x1="240" y1="175" x2="200" y2="106" class="vec-v"/>
+        <line x1="240" y1="175" x2="240" y2="240" class="vec-f"/>
+        <line x1="240" y1="175" x2="180" y2="175" class="vec-an"/>
+        <text x="180" y="100" class="t-v">T</text>
+        <text x="248" y="240" class="t-f">mg</text>
+        <text x="160" y="198" class="t-an">m v²/r</text>
+        <text x="158" y="60">θ</text>
+      </svg>
+      <figcaption>Pendulu konikoa: $T\cos\theta=mg$, $T\sin\theta=m\dfrac{v^2}{r}$</figcaption>
+    </figure>
+    <div>
+      <div class="note"><b>Kurba laua:</b> marruskadura estatikoa da zentripetua: $m\dfrac{v^2}{R}\le\mu_smg$.</div>
+      <div class="note"><b>Disko biragarria:</b> masa bat $R$-ra: $m\omega^2R\le\mu_smg$. Lehena irristatzen dena <b>R handiena</b> duena da, kanporantz.</div>
+      <div class="note"><b>Peraltea</b> (marruskadurarik gabe): $N\cos\theta=mg$ eta $N\sin\theta=m\dfrac{v^2}{R}$.</div>
+    </div>
+  </div>
+
+  <h2 id="ez-inertzialak"><span class="sec-num">2.5</span>Dinamika erreferentzia-sistema azeleratu batean <span class="exam-flag">Teoria 3.7 · 4.4</span></h2>
+  <p>S′ sistemak $\vec V=0$ edo $\vec V=$ kte badu, ez du azeleraziorik: inertziala da eta Newton zuzenean erabil daiteke. Baina $\vec A\ne0$ bada?</p>
+  <ol class="steps">
+    <li>S inertziala da: $\sum\vec F=m\vec a$.</li>
+    <li>Zinematikatik (1.5): $\vec a\,'=\vec a-\vec A$.</li>
+    <li>S′-n behatzaileak $\vec a\,'$ ikusten du:
+      <div class="formula-box"><span class="tag">2. lege orokortua</span>
+      $$\vec F\,'=m\vec a\,'=m(\vec a-\vec A)=\sum\vec F\ \underbrace{-\,m\vec A}_{\text{inertzia-indarra}}$$
+      </div></li>
+    <li>$\vec A=0$ denean: $\vec F\,'=m\vec a\,'=m\vec a$ (berriro inertziala).</li>
+    <li><b>Interpretazioa:</b> S′-n Newton erabiltzeko, benetako indarrei $-m\vec A$ gehitu behar zaie. Ez du inongo gorputzek egiten (ez du erreakziorik): «fiktizioa» da.</li>
+  </ol>
+  <div class="mine"><p style="margin:0">E.S. ez-inertzialean beti <b>inertziako indarra kontrara</b> ($-m\vec A$) jarri, Newton erabili ahal izateko.</p></div>
+  <div class="sim" id="sim-bagoi" data-sim="bagoia">
+    <div class="sim-head"><b>Pendulua bagoi azeleratuan</b><span>SIMULAZIOA</span></div>
+  </div>
+  <p><b>Lurretik</b> (inertziala): bola bagoiarekin azeleratzen da: $\vec T+m\vec g=m\vec A$. <b>Bagoitik</b> (ez-inertziala): bola geldi dago: $\vec T+m\vec g-m\vec A=0$. Bietatik: $\tan\theta=A/g$.</p>
+  <div class="note"><b>Igogailua:</b> $A$ azelerazioz gora → balantzak $N=m(g+A)$ markatzen du; beherantz → $N=m(g-A)$.</div>
+
+  <details class="extra">
+    <summary>Sistema biragarriak: zentrifugoa eta Coriolis</summary>
+    <div class="extra-body">
+      <p>Zure apunteetan ez dago. S′ ω abiadura angeluarrez biratzen bada, bi inertzia-indar gehiago: <b>zentrifugoa</b> $-m\vec\omega\times(\vec\omega\times\vec r\,')$ (kanporantz, $m\omega^2r$) eta <b>Coriolis</b> $-2m\vec\omega\times\vec v\,'$.</p>
+      <div class="sim" id="sim-cor" data-sim="coriolis">
+        <div class="sim-head"><b>Plataforma biragarria: zuzen bat ala kurba bat?</b><span>SIMULAZIOA</span></div>
+      </div>
+    </div>
+  </details>
+
+  <nav class="pager"><a class="btn btn-ghost" href="#zinematika">← 1. gaia</a><a class="btn" href="#dinamika">3. gaia: Dinamika →</a></nav>
+</section>

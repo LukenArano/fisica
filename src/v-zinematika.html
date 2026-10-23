@@ -1,0 +1,183 @@
+<section class="view" id="zinematika" data-t="1" hidden>
+  <header class="view-head">
+    <span class="eyebrow">1. gaia · zure apunteetan «3. gaia»</span>
+    <h1>Partikularen zinematika</h1>
+    <p class="lede">Higidura deskribatzea: non dago partikula, zein abiadurarekin eta zein azelerazioarekin. Indarrak gero etorriko dira.</p>
+  </header>
+
+  <div class="warn"><b>Azterketan:</b> 3.4 (osagai intrintsekoak) eta 3.5.2 (higidura zirkularra) teoria-galderak dira. 2024-25ean «Azaldu, arrazoituz, azelerazioaren osagai normal eta tangentzialak» atera zen (1 puntu). Problemetan jaurtiketa parabolikoa da ohikoena.</div>
+
+  <h2 id="z-oinarriak"><span class="sec-num">1.1</span>Abiadura eta azelerazioa</h2>
+  <p>Partikula <span class="kw">puntutzat</span> hartzen dugu (gorputz handia bada, bere masa-zentroa). Bere posizioa $\vec r(t)$ da.</p>
+  <div class="formula-box"><span class="tag">Batez bestekoa eta aldiunekoa</span>
+    $$\langle\vec v\rangle=\frac{\Delta\vec r}{\Delta t}\qquad \vec v=\frac{d\vec r}{dt}=(\dot x,\dot y,\dot z)$$
+    $$\langle\vec a\rangle=\frac{\Delta\vec v}{\Delta t}\qquad \vec a=\frac{d\vec v}{dt}=(\ddot x,\ddot y,\ddot z)$$
+  </div>
+  <div class="mine">
+    <p style="margin:0">• <b>r ezaguna bada: deribatu</b> $\ r(t)\to v(t)\to a$ — beti posible!<br>
+    • <b>a ezaguna bada: integratu</b> $\ a\to v\to r$ — ez da beti posible!</p>
+    $$\vec v(t)=\vec v_0+\int_{t_0}^{t}\vec a(t)\,dt$$ $$\vec r(t)=\vec r_0+\int_{t_0}^{t}\vec v(t)\,dt$$
+  </div>
+
+  <h3>Higidura zuzenak</h3>
+  <div class="two">
+    <div class="formula-box"><span class="tag">HZU · ρ = ∞, v = kte, a = 0</span>
+      $$x(t)=x_0+vt$$
+    </div>
+    <div class="formula-box"><span class="tag">HZUA · ρ = ∞, a = kte</span>
+      $$v(t)=v_0+at$$
+      $$x(t)=x_0+v_0t+\tfrac12at^2$$
+      $$v^2-v_0^2=2a\,\Delta x\quad(t\text{ kanporatuz})$$
+    </div>
+  </div>
+
+  <h2 id="z-intrintsekoak"><span class="sec-num">1.2</span>Osagai intrintsekoak <span class="exam-flag">Teoria 3.4</span></h2>
+  <p>Ardatz finkoen ordez, partikularekin mugitzen den oinarria erabiltzen dugu: $\hat u_t$ (abiaduraren norabidean, tangentea) eta $\hat u_n$ (perpendikularra, kurbaduraren zentrorantz).</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 540 330" role="img" aria-label="Osagai intrintsekoen diagrama: ibilbidea, P puntua, abiadura tangentea, azelerazio tangentziala eta normala, kurbadura-zentroa C eta erradioa ρ">
+      <circle cx="230" cy="300" r="190" class="ln-m"/>
+      <path d="M40 255 Q70 175 121 144.4" class="ln"/>
+      <path d="M121 144.4 A190 190 0 0 1 394.5 205" class="ln" style="stroke-width:2.8"/>
+      <path d="M394.5 205 Q430 250 500 262" class="ln"/>
+      <line x1="295" y1="121.5" x2="230" y2="300" class="ln-m"/>
+      <circle cx="230" cy="300" r="4" class="f-an"/>
+      <text x="210" y="296" class="t-an">C</text>
+      <text x="244" y="232" class="t-an">ρ</text>
+      <line x1="360.8" y1="145.4" x2="329.8" y2="230" class="ln-m"/>
+      <line x1="264.2" y1="206.1" x2="329.8" y2="230" class="ln-m"/>
+      <line x1="295" y1="121.5" x2="407.8" y2="162.5" class="vec-v"/>
+      <line x1="295" y1="121.5" x2="360.8" y2="145.4" class="vec-at"/>
+      <line x1="295" y1="121.5" x2="264.2" y2="206.1" class="vec-an"/>
+      <line x1="295" y1="121.5" x2="329.8" y2="230" class="vec-a"/>
+      <circle cx="295" cy="121.5" r="6" class="f-ink"/>
+      <text x="283" y="106">P</text>
+      <text x="414" y="168" class="t-v">v</text>
+      <text x="350" y="134" class="t-at">aₜ</text>
+      <text x="236" y="200" class="t-an">aₙ</text>
+      <text x="336" y="246" class="t-a">a</text>
+      <text x="30" y="292" style="fill:var(--muted)">ibilbidea</text>
+      <text x="330" y="40">a = aₜ ûₜ + aₙ ûₙ</text>
+      <text x="330" y="64" style="fill:var(--muted)">zirkulu osculatzailea</text>
+    </svg>
+    <figcaption>P puntuan ibilbidea ρ erradioko zirkulu batekin nahas daiteke. aₜ abiaduraren norabidean; aₙ beti C zentrorantz.</figcaption>
+  </figure>
+
+  <div class="mine">
+    <p style="margin:0"><b>v ≠ kte → a ≠ 0</b>, hiru kasu:</p>
+    <p style="margin:0">• <b>Modulua aldatu</b> → higidura zuzena: $a=a_t$; $a_t\gt0$ → $v\uparrow$, $a_t\lt0$ → $v\downarrow$.<br>
+    • <b>Norabidea aldatu</b> → higidura kurboa, $v=$ kte, $\vec v\perp\vec a$ (normala).<br>
+    • <b>Modulua eta norabidea aldatu</b> → $a_t$ eta $a_n$ biak.</p>
+  </div>
+
+  <h3>Dedukzioa (azterketan bezala)</h3>
+  <ol class="steps">
+    <li>Abiadura tangentea da: $\vec v=v\,\hat u_t$, non $v=ds/dt$.</li>
+    <li>Deribatu biderkadura bezala: $\vec a=\dfrac{dv}{dt}\,\hat u_t+v\,\dfrac{d\hat u_t}{dt}$.</li>
+    <li>$\hat u_t$ unitarioa denez ($\hat u_t\cdot\hat u_t=1$), bere deribatua perpendikularra da: $\hat u_n$ norabidean.</li>
+    <li>Tokian-tokian ρ erradioko zirkulua: $ds=\rho\,d\varphi$ eta $|d\hat u_t|=d\varphi=\dfrac{ds}{\rho}$, beraz $\dfrac{d\hat u_t}{dt}=\dfrac{v}{\rho}\hat u_n$.</li>
+    <li>Emaitza:
+      <div class="formula-box"><span class="tag">Emaitza</span>
+      $$\vec a_{tot}=\frac{dv}{dt}\,\hat u_t+\frac{v^2}{\rho}\,\hat u_n$$ $$|\vec a_{tot}|^2=a_t^2+a_n^2$$
+      </div></li>
+  </ol>
+  <div class="two">
+    <div class="note"><b class="vc-at">aₜ = dv/dt</b> — abiaduraren <span class="kw">moduluaren</span> aldaketa.</div>
+    <div class="note"><b class="vc-an">aₙ = v²/ρ</b> — abiaduraren <span class="kw">norabidearen</span> aldaketa. Zuzenean ρ = ∞ → aₙ = 0.</div>
+  </div>
+
+  <div class="sim" id="sim-intr" data-sim="intrintsekoak">
+    <div class="sim-head"><b>Ibilbide kurbatu bat: v, aₜ eta aₙ zuzenean</b><span>SIMULAZIOA</span></div>
+  </div>
+  <p class="legend"><span><i style="background:var(--c-v)"></i>abiadura</span><span><i style="background:var(--c-at)"></i>aₜ</span><span><i style="background:var(--c-an)"></i>aₙ</span><span><i style="background:var(--c-a)"></i>a osoa</span></p>
+  <p>Probatu «|v| konstantea»: $a_t=0$ eta azelerazio osoa normala da. Ibilbidea zuzenago dagoen tokietan (ρ handia) $a_n$ txikitzen da.</p>
+
+  <h2 id="z-zirkularra"><span class="sec-num">1.3</span>Higidura zirkularra <span class="exam-flag">Teoria 3.5.2</span></h2>
+  <div class="two">
+    <div class="formula-box"><span class="tag">Oinarria</span>
+      $$s=R\,\varphi\qquad v=R\,\omega$$ $$\vec a=R\alpha\,\hat u_t+R\omega^2\,\hat u_n$$
+    </div>
+    <div class="tbl-wrap" style="margin:18px 0"><table class="tbl">
+      <thead><tr><th>Hig. zuzena</th><th>Hig. zirkularra</th></tr></thead>
+      <tbody>
+        <tr><td>posizioa $\vec r$</td><td>angelua $\varphi$</td></tr>
+        <tr><td>abiadura $\vec v$</td><td>abiadura angeluarra $\omega=\dot\varphi$</td></tr>
+        <tr><td>azelerazioa $\vec a$</td><td>azelerazio angeluarra $\alpha=\dot\omega$</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+  <div class="two">
+    <div class="formula-box"><span class="tag">HZU zirkularra · α = 0, aₜ = 0</span>
+      $$\varphi(t)=\varphi_0+\omega_0t$$
+      $$T=\frac{2\pi}{\omega_0}\qquad f=\frac1T$$
+    </div>
+    <div class="formula-box"><span class="tag">Uniformeki azeleratua · α = kte</span>
+      $$\omega(t)=\omega_0+\alpha t$$
+      $$\varphi(t)=\varphi_0+\omega_0t+\tfrac12\alpha t^2$$
+      $$\omega^2=\omega_0^2+2\alpha\,\Delta\varphi$$
+    </div>
+  </div>
+  <div class="sim" id="sim-zirk" data-sim="zirkularra">
+    <div class="sim-head"><b>Higidura zirkularra: aldatu ω₀ eta α</b><span>SIMULAZIOA</span></div>
+  </div>
+  <div class="warn"><b>Akats ohikoa:</b> «bira/min» ez da rad/s. $n\ \text{bira/min}=\dfrac{2\pi n}{60}\ \text{rad/s}$.</div>
+
+  <h2 id="z-jaurtiketa"><span class="sec-num">1.4</span>Higidura konposatuak eta jaurtiketa parabolikoa</h2>
+  <p>Orokorrean $\vec a=$ kte bada, ardatz bakoitza HZUA bat da, bere aldetik:</p>
+  <div class="formula-box"><span class="tag">Osagaiak</span>
+    $$v_{0x}=|\vec v_0|\cos\theta\qquad v_{0y}=|\vec v_0|\sin\theta$$
+    $$x=x_0+v_{0x}t+\tfrac12a_xt^2\qquad y=y_0+v_{0y}t+\tfrac12a_yt^2$$
+    $$v_x=v_{0x}+a_xt\qquad v_y=v_{0y}+a_yt$$
+  </div>
+  <div class="mine">
+    <p style="margin:0"><b>Jaurtiketa parabolikoa:</b> OX → HZU ($a_x=0$), OY → HZUA ($a_y=-g$). Orokorra baino errazagoa.</p>
+    <p style="margin:0">• Punturik altuena: $v_y=0$<br>• Irismen horizontal maximoa: $y=0$ → $x_{max}=v_x\,t$<br>• Horizontalarekiko angelua: $\tan\alpha=\dfrac{v_y}{v_x}$</p>
+  </div>
+  <div class="sim" id="sim-jaurt" data-sim="jaurtiketa">
+    <div class="sim-head"><b>Jaurtiketa parabolikoa</b><span>SIMULAZIOA</span></div>
+  </div>
+  <p>Aktibatu «osagai intrintsekoak»: goiko puntuan $a_t=0$ eta $a_n=g$; igotzean $a_t\lt0$ eta jaistean $a_t\gt0$.</p>
+
+  <h2 id="z-erlatiboa"><span class="sec-num">1.5</span>Higidura erlatiboa <span class="exam-flag">Teoria 3.7 · 4.4</span></h2>
+  <p>S sistema geldi dago; S′ sistema traslazioan mugitzen da. <b>Maiuskulak</b>: erreferentzia-sistema (S′-ren jatorria). <b>Minuskulak</b>: P partikula.</p>
+  <figure class="diagram">
+    <svg viewBox="0 0 520 280" role="img" aria-label="Bi erreferentzia-sistema: S geldia eta S′ traslazioan; R, r eta r′ bektoreak">
+      <line x1="60" y1="235" x2="210" y2="235" class="ax"/><line x1="60" y1="235" x2="60" y2="95" class="ax"/>
+      <text x="214" y="240">X</text><text x="52" y="88">Y</text><text x="38" y="254">S</text>
+      <line x1="300" y1="175" x2="430" y2="175" class="ax"/><line x1="300" y1="175" x2="300" y2="55" class="ax"/>
+      <text x="434" y="180">X′</text><text x="292" y="48">Y′</text>
+      <text x="296" y="200">S′</text>
+      <line x1="60" y1="235" x2="300" y2="175" class="vec-acc"/>
+      <line x1="60" y1="235" x2="430" y2="70" class="vec-a"/>
+      <line x1="300" y1="175" x2="430" y2="70" class="vec-v"/>
+      <circle cx="430" cy="70" r="6" class="f-ink"/><text x="440" y="66">P</text>
+      <text x="170" y="222" class="t-acc">R</text>
+      <text x="220" y="140" class="t-a">r</text>
+      <text x="372" y="112" class="t-v">r′</text>
+      <text x="330" y="260">r′ = r − R</text>
+    </svg>
+  </figure>
+  <div class="formula-box"><span class="tag">Traslazioa (deribatuz)</span>
+    $$\vec r\,'=\vec r-\vec R$$ $$\vec v\,'=\vec v-\vec V$$ $$\vec a\,'=\vec a-\vec A$$
+  </div>
+  <div class="mine">
+    <p style="margin:0"><b>Kasu berezia:</b> S′ abiadura konstantez mugitzen bada ($\vec V=$ kte):</p>
+    $$\vec r\,'=\vec r-\vec Vt\qquad\vec v\,'=\vec v-\vec V$$ $$\vec a\,'=\vec a$$
+    <p style="margin:0">Bi sistemek azelerazio bera neurtzen dute (Galileoren transformazioa).</p>
+  </div>
+  <div class="sim" id="sim-ibaia" data-sim="ibaia">
+    <div class="sim-head"><b>Ibaia zeharkatzen duen txalupa: v = v′ + V</b><span>SIMULAZIOA</span></div>
+  </div>
+  <p class="legend"><span><i style="background:var(--c-v)"></i>v′ urarekiko</span><span><i style="background:var(--c-f)"></i>V ura lurrarekiko</span><span><i style="background:var(--c-a)"></i>v lurrarekiko</span></p>
+
+  <details class="extra">
+    <summary>S′ biratzen ere ari bada (Coriolis)</summary>
+    <div class="extra-body">
+      <p>Zure apunteetan ez dago; traslazioa bakarrik behar duzu. Jakin-mina baduzu: S′ ω abiadura angeluarrez biratzen bada, bi termino gehiago agertzen dira:</p>
+      $$\vec a=\vec a\,'+\vec A+\vec\omega\times(\vec\omega\times\vec r\,')+2\,\vec\omega\times\vec v\,'$$
+      <p>Lehena zentripetua da; bigarrena, Coriolisen azelerazioa (partikula S′-rekiko mugitzen denean bakarrik).</p>
+    </div>
+  </details>
+
+  <nav class="pager"><a class="btn btn-ghost" href="#hasiera">← Hasiera</a><a class="btn" href="#oinarriak">2. gaia: Oinarriak →</a></nav>
+</section>

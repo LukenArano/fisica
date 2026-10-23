@@ -1,0 +1,111 @@
+<section class="view" id="oszilazioak" data-t="4" hidden>
+  <header class="view-head">
+    <span class="eyebrow">4. gaia · zure apunteetan «6. gaia»</span>
+    <h1>Higidura oszilakorra</h1>
+    <p class="lede">Oreka egonkor baten inguruko higidura txikiak: malgukiak, penduluak, katilu bateko bola…</p>
+  </header>
+
+  <div class="warn"><b>Azterketan:</b> 6.2, 6.3 eta 6.4 teoria-galderak dira. 2023-24an: «Pendulu sinple baten maiztasun naturala deduzitu, oszilazio txikien hurbilketarekin» (1 puntu). 2025eko kontrolean katilu zirkularreko partikula (4 puntu): pendulu sinplea da, $L=R$ jarrita.</div>
+
+  <h2 id="hhs"><span class="sec-num">4.1</span>Higidura harmoniko sinplea (HHS) <span class="exam-flag">Teoria 6.2</span></h2>
+  <ol class="steps">
+    <li><span class="kw">Indar berreskuratzailea</span> malgukietan: $F=-kx$ (higiduraren kontra). Penduluetan: pisua $mg$.</li>
+    <li>Newton: $\sum F=-kx=m\,a=m\dfrac{d^2x}{dt^2}=m\ddot x$.</li>
+    <li>HHS bat deskribatzen duen ekuazioa:
+      <div class="formula-box"><span class="tag">Ekuazio diferentziala</span>
+      $$\ddot x+\frac km\,x=0$$ $$\ddot x+\omega_0^2\,x=0\qquad\omega_0=\sqrt{k/m}$$
+      </div></li>
+    <li>Soluzioa (egiaztatu ordezkatuz):
+      <div class="formula-box"><span class="tag">Soluzioa</span>
+      $$x(t)=A\sin(\omega_0t+\varphi)$$
+      $$v(t)=A\omega_0\cos(\omega_0t+\varphi)=\dot x(t)$$
+      $$a(t)=-A\omega_0^2\sin(\omega_0t+\varphi)=\ddot x(t)$$
+      </div></li>
+  </ol>
+  <div class="two">
+    <div class="formula-box"><span class="tag">Hasierako baldintzetatik</span>
+      $$A=\frac{\sqrt{\dot x_0^2+\omega_0^2x_0^2}}{\omega_0}$$ $$\varphi=\arctan\!\left(\frac{x_0\,\omega_0}{\dot x_0}\right)$$
+    </div>
+    <div class="mine" style="margin:18px 0">
+      <p style="margin:0">• $v_{max}$: oszilazioaren <b>oreka-puntuan</b> ($v_{max}=A\omega_0$). Bi muturretan $v=0$.<br>• $a_{max}$: oszilazioaren <b>muturretan</b> ($a_{max}=A\omega_0^2$).</p>
+    </div>
+  </div>
+  <div class="warn"><b>Koadrantea:</b> arctan-ek bi soluzio ditu. Begiratu $x_0$ eta $\dot x_0$-ren zeinuak: $\sin\varphi$-k $x_0$-ren zeinua du eta $\cos\varphi$-k $\dot x_0$-rena. Adibidez $x_0=1$, $\dot x_0=-1$, $\omega_0=2$: $\varphi=117°$ (2. koadrantea), ez $-63°$.</div>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead><tr><th>Magnitudea</th><th>Ikurra</th><th>Esanahia</th></tr></thead>
+    <tbody>
+      <tr><td>Anplitudea</td><td>$A$</td><td>Elongazio maximoa (m)</td></tr>
+      <tr><td>Maiztasun angeluar naturala</td><td>$\omega_0$</td><td>rad/s; ez dago $A$-ren menpe</td></tr>
+      <tr><td>Periodoa / maiztasuna</td><td>$T=2\pi/\omega_0$, $f=1/T$</td><td>s / Hz</td></tr>
+      <tr><td>Hasierako fasea</td><td>$\varphi$</td><td>rad</td></tr>
+    </tbody>
+  </table></div>
+  <div class="sim" id="sim-hhs" data-sim="hhs">
+    <div class="sim-head"><b>Malgukia, zirkulu erreferentea eta grafikoak</b><span>SIMULAZIOA</span></div>
+  </div>
+
+  <h3>Energia</h3>
+  <div class="mine"><p style="margin:0">Indar kontserbakorrak → $\Delta E_{mek}=0$: <b>kontserbatzen da</b>.</p></div>
+  <div class="formula-box"><span class="tag">Malgukia HHS</span>
+    $$E_z=\tfrac12mv^2=\tfrac12m\dot x^2$$ $$=\tfrac12mA^2\omega_0^2\cos^2(\omega_0t+\varphi)$$
+    $$E_p=\tfrac12kx^2=\tfrac12kA^2\sin^2(\omega_0t+\varphi)\quad(\text{elastikoa bakarrik})$$
+    $$E_{mek}=E_z+E_p=\tfrac12kA^2\quad\text{kte oszilazio osoan}$$
+  </div>
+  <div class="two">
+    <div class="note"><b>$E_{mek}=E_{z,max}$</b> oreka-puntuan ($E_p=0$).</div>
+    <div class="note"><b>$E_{mek}=E_{p,max}$</b> muturretan ($E_z=0$).</div>
+  </div>
+
+  <h2 id="bertikala"><span class="sec-num">4.2</span>Malguki bertikala <span class="exam-flag">Teoria 6.3</span></h2>
+  <ol class="steps">
+    <li><b>Oreka:</b> malgukia $\Delta l$ luzatzen da: $k\Delta l=mg$ → $\Delta l=mg/k$.</li>
+    <li>Neurtu $y$ <b>oreka-posiziotik</b>: $m\ddot y=mg-k(\Delta l+y)=-ky$.</li>
+    <li>Emaitza: $\ddot y+\omega_0^2y=0$, $\omega_0=\sqrt{k/m}$ — malguki horizontalaren berdina. Grabitateak oreka bakarrik jaisten du.</li>
+  </ol>
+  <div class="mine"><p style="margin:0">Malguki bertikalean $E_{p,tot}=E_{p,el}+E_{p,g}$; baina <b>jatorria oreka-puntuan</b> hartuta, $E_{p,tot}=\tfrac12ky^2$ besterik ez.</p></div>
+  <div class="sim" id="sim-bert" data-sim="bertikala">
+    <div class="sim-head"><b>Malguki bertikala: oreka mg/k beherago</b><span>SIMULAZIOA</span></div>
+  </div>
+  <p><b>Bi malguki, sabaian eta zoruan (2024-25):</b> masa $y$ jaistean biek $-ky$ egiten dute → $m\ddot y=-2ky$, $\omega_0=\sqrt{2k/m}$.</p>
+
+  <h2 id="pendulua"><span class="sec-num">4.3</span>Pendulu sinplea <span class="exam-flag">Teoria 6.4 · 2023-24</span></h2>
+  <p class="note"><b>Oharra:</b> zure apunteetan ez dago formula hau, baina temarioan dago eta 2023-24an teoria-galdera izan zen.</p>
+  <ol class="steps">
+    <li>Indarrak: pisua $mg$ eta tentsioa $T$. Indar berreskuratzailea pisuaren osagai tangentziala da.</li>
+    <li>Norabide tangentzialean (tentsioak ez du osagairik): $mL\ddot\varphi=-mg\sin\varphi$.</li>
+    <li><b>Oszilazio txikiak:</b> $\sin\varphi\approx\varphi$:
+      <div class="formula-box"><span class="tag">Emaitza</span>
+      $$\ddot\varphi+\frac gL\,\varphi=0$$ $$\omega_0=\sqrt{\frac gL}\qquad T=2\pi\sqrt{\frac Lg}$$
+      </div></li>
+    <li>Ez dago masaren menpe, ezta anplitudearen menpe ere (angelu txikietan).</li>
+  </ol>
+  <div class="sim" id="sim-pend" data-sim="pendulua">
+    <div class="sim-head"><b>Pendulu sinplea: zehatza vs. angelu txikiak</b><span>SIMULAZIOA</span></div>
+  </div>
+
+  <h3>Katilu zirkularra (2025eko kontrola)</h3>
+  <div class="two">
+    <figure class="diagram">
+      <svg viewBox="0 0 300 230" role="img" aria-label="R erradioko katilu zirkularreko partikula: normala zentrorantz, pisua beherantz">
+        <path d="M30 60 A130 130 0 0 0 270 60" class="ln" style="stroke-width:2.6"/>
+        <circle cx="150" cy="10" r="3" class="f-ink"/><text x="130" y="16">O</text>
+        <line x1="150" y1="10" x2="150" y2="150" class="ln-m"/>
+        <line x1="150" y1="10" x2="200" y2="130" class="ln-m"/>
+        <text x="156" y="54">φ</text><text x="184" y="80">R</text>
+        <circle cx="200" cy="130" r="8" class="f-ink"/>
+        <line x1="200" y1="130" x2="177" y2="75" class="vec-v"/>
+        <line x1="200" y1="130" x2="200" y2="200" class="vec-f"/>
+        <line x1="200" y1="130" x2="173" y2="141" class="vec-at"/>
+        <text x="164" y="72" class="t-v">N</text>
+        <text x="206" y="206" class="t-f">mg</text>
+        <text x="96" y="152" class="t-at">mg sinφ</text>
+      </svg>
+    </figure>
+    <div>
+      <p>Normala zentrorantz doa (tentsioaren papera). Ekuazioa pendulu sinplearena da $L=R$ jarrita: $\omega_0=\sqrt{g/R}$.</p>
+      <p>$R=0{,}5$ m: $\omega_0=4{,}43$ rad/s, $T=1{,}42$ s. Masa bikoiztuta ez dira aldatzen.</p>
+    </div>
+  </div>
+
+  <nav class="pager"><a class="btn btn-ghost" href="#dinamika">← 3. gaia</a><a class="btn" href="#praktika">Praktikatu →</a></nav>
+</section>

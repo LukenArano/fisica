@@ -1,0 +1,131 @@
+<section class="view" id="teoria" hidden>
+  <header class="view-head">
+    <span class="eyebrow">Gaiak_azterketa_fisika.pdf · 1.–4. gaiak</span>
+    <h1>Teoria-galderak</h1>
+    <p class="lede">Azterketan sar daitezkeen teoria-puntuak eta bakoitzean zer idatzi behar den. Teoria-galdera batek 1–1,5 puntu balio du.</p>
+  </header>
+  <div class="note"><b>Erantzun on baten egitura:</b> (1) definizioak eta irudia, (2) abiapuntuko legea, (3) dedukzioa urratsez urrats, (4) emaitza koadro batean, (5) interpretazioa edo kasu berezi bat. Praktikatzeko: <a href="#dedukzioak">Dedukzioak ordenatu</a>.</div>
+
+  <details class="th" data-t="1" open>
+    <summary><span class="code">3.4</span>Abiaduraren eta azelerazioaren osagai intrintsekoak</summary>
+    <div class="th-body">
+      <p class="pts">2024-25 maiatza, 1 puntu — «Azaldu, arrazoituz, azelerazioaren osagai normal eta tangentzialak»</p>
+      <ul class="checklist">
+        <li>Irudia: ibilbidea, $\hat u_t$, $\hat u_n$, kurbadura-zentroa eta $\rho$.</li>
+        <li>$\vec v=v\,\hat u_t$ (abiadura tangentea).</li>
+        <li>Deribatu: $\vec a=\dfrac{dv}{dt}\hat u_t+v\dfrac{d\hat u_t}{dt}$.</li>
+        <li>$\dfrac{d\hat u_t}{dt}\perp\hat u_t$ ($\hat u_t\cdot\hat u_t=1$ deribatuz).</li>
+        <li>$ds=\rho\,d\varphi$ → $\dfrac{d\hat u_t}{dt}=\dfrac v\rho\hat u_n$.</li>
+        <li>Emaitza: $\vec a_{tot}=\dfrac{dv}{dt}\hat u_t+\dfrac{v^2}{\rho}\hat u_n$, $a^2=a_t^2+a_n^2$.</li>
+        <li>Hiru kasuak: modulua aldatu (zuzena), norabidea aldatu (kurboa, $\vec v\perp\vec a$), biak.</li>
+      </ul>
+      <p><a href="#z-intrintsekoak">Dedukzio osoa →</a></p>
+    </div>
+  </details>
+
+  <details class="th" data-t="1">
+    <summary><span class="code">3.5.2</span>Higidura zirkularra</summary>
+    <div class="th-body">
+      <ul class="checklist">
+        <li>Taula: posizioa ↔ $\varphi$, abiadura ↔ $\omega$, azelerazioa ↔ $\alpha$.</li>
+        <li>$s=R\varphi$, $v=R\omega$ (deribatuz), $\vec a=R\alpha\hat u_t+R\omega^2\hat u_n$.</li>
+        <li>Uniformea: $\varphi=\varphi_0+\omega_0t$, $T=2\pi/\omega_0$, $f=1/T$, $a_t=0$.</li>
+        <li>Uniformeki azeleratua: $\omega=\omega_0+\alpha t$, $\varphi=\varphi_0+\omega_0t+\tfrac12\alpha t^2$, $\omega^2=\omega_0^2+2\alpha\Delta\varphi$.</li>
+      </ul>
+      <p><a href="#z-zirkularra">Teoria eta simulazioa →</a></p>
+    </div>
+  </details>
+
+  <details class="th" data-t="2" open>
+    <summary><span class="code">3.7 · 4.4</span>Higidura erlatiboa. Dinamika sistema azeleratu batean</summary>
+    <div class="th-body">
+      <p class="pts">2022-23 maiatza; 2025eko kontrola, 1,5 puntu — «Azaldu era arrazoituan nola aplikatu behar den Newton-en 2. legea erreferentzia sistema ez inertzial batean»</p>
+      <ul class="checklist">
+        <li>Irudia: S geldia, S′ traslazioan, $\vec R$, $\vec r$, $\vec r\,'$ (maiuskulak sistema, minuskulak partikula).</li>
+        <li>$\vec r\,'=\vec r-\vec R$ → deribatu → $\vec v\,'=\vec v-\vec V$ → $\vec a\,'=\vec a-\vec A$.</li>
+        <li>Kasu berezia: $\vec V=$ kte → $\vec a\,'=\vec a$ (Galileo): S′ ere inertziala.</li>
+        <li>S-n Newton: $\sum\vec F=m\vec a$. S′-n: $\vec F\,'=m\vec a\,'=m(\vec a-\vec A)=\sum\vec F-m\vec A$.</li>
+        <li><b>Inertzia-indarra</b> $-m\vec A$: beti kontrara; ez du inork egiten, ez du erreakziorik.</li>
+        <li>Adibidea: pendulua bagoian ($\tan\theta=A/g$) edo igogailua ($N=m(g+A)$).</li>
+      </ul>
+      <p><a href="#ez-inertzialak">Dedukzio osoa →</a></p>
+    </div>
+  </details>
+
+  <details class="th" data-t="3" open>
+    <summary><span class="code">5.2</span>Dinamikaren teoremak: momentu lineala, angeluarra eta energia</summary>
+    <div class="th-body">
+      <p class="pts">2025eko kontrola, 1,5 puntu — «Azaldu, arrazoituz, partikula batentzat momentu angeluarraren teorema, indar momentuekin daukan erlazioa eta bere kontserbazioa»</p>
+      <h4>Momentu lineala</h4>
+      <ul class="checklist">
+        <li>$\vec p=m\vec v$ (kg·m/s); $\sum\vec F=m\dfrac{d\vec v}{dt}=\dfrac{d\vec p}{dt}$.</li>
+        <li>Teorema: $\vec F_{kanpo}=d\vec p/dt$. Kontserbazioa: $\vec F_{kanpo}=0$ → $\vec p$ kte (talketan).</li>
+      </ul>
+      <h4>Momentu angeluarra</h4>
+      <ul class="checklist">
+        <li>$\vec L_0=\vec r\times\vec p$ (kg·m²/s), O jatorri batekiko; $\vec M_0=\vec r\times\vec F_{kanpo}$.</li>
+        <li>Deribatu: $\dot{\vec L}_0=\vec v\times m\vec v+\vec r\times\dot{\vec p}$; lehena nulua.</li>
+        <li>Teorema: $d\vec L_0/dt=\vec M_0$. Kontserbazioa: $\sum\vec M_0=0$ → $\vec L_0$ kte (indar zentrala).</li>
+        <li>$\vec p$ ↔ traslazioa; $\vec L$ ↔ biraketa.</li>
+      </ul>
+      <h4>Energia</h4>
+      <ul class="checklist">
+        <li>$W=\int\vec F\cdot d\vec r$; $P=dW/dt=\vec F\cdot\vec v$.</li>
+        <li>$dE_z/dt=\vec F\cdot\vec v=P$ → $W_{osoa}=\Delta E_z$.</li>
+      </ul>
+      <p><a href="#momentu-lineala">Momentu lineala →</a> · <a href="#momentu-angeluarra">Angeluarra →</a> · <a href="#energia">Energia →</a></p>
+    </div>
+  </details>
+
+  <details class="th" data-t="3">
+    <summary><span class="code">5.3</span>Indar kontserbakorrak. Energia potentziala. Energia mekanikoaren kontserbazioa</summary>
+    <div class="th-body">
+      <ul class="checklist">
+        <li>Posizioaren menpeko indarrak; kontserbakorra: lana ibilbidearen independentea, ibilbide itxian $W=0$ (irudia).</li>
+        <li>$E_p=mgh$ (grabitatorioa), $E_p=\tfrac12kx^2$ (elastikoa); $W_{konts}=-\Delta E_p$.</li>
+        <li>Konts. bakarrik: $W_{osoa}=\Delta E_z=-\Delta E_p$ → $\Delta(E_z+E_p)=0$ → $\Delta E_{mek}=0$.</li>
+        <li>Ez-kontserbakorrekin (marruskadura): $\Delta E_{mek}=W_{ez\text{-}konts}$.</li>
+      </ul>
+      <p><a href="#kontserbakorrak">Teoria eta simulazioa →</a></p>
+    </div>
+  </details>
+
+  <details class="th" data-t="4">
+    <summary><span class="code">6.2</span>Higidura harmoniko sinplea</summary>
+    <div class="th-body">
+      <ul class="checklist">
+        <li>Indar berreskuratzailea $F=-kx$; Newton: $m\ddot x=-kx$ → $\ddot x+\omega_0^2x=0$, $\omega_0=\sqrt{k/m}$.</li>
+        <li>$x=A\sin(\omega_0t+\varphi)$, $v=\dot x$, $a=\ddot x=-\omega_0^2x$.</li>
+        <li>$A$ eta $\varphi$ hasierako baldintzetatik; $v_{max}$ orekan, $a_{max}$ muturretan.</li>
+        <li>Energia: $E_{mek}=\tfrac12kA^2$ kte.</li>
+      </ul>
+      <p><a href="#hhs">Teoria eta simulazioa →</a></p>
+    </div>
+  </details>
+
+  <details class="th" data-t="4">
+    <summary><span class="code">6.3</span>Malguki bertikala</summary>
+    <div class="th-body">
+      <ul class="checklist">
+        <li>Irudia: $l_0$, oreka ($\Delta l$) eta posizio orokorra ($y$).</li>
+        <li>Oreka: $k\Delta l=mg$. Newton: $m\ddot y=mg-k(\Delta l+y)=-ky$.</li>
+        <li>HHS bera, $\omega_0=\sqrt{k/m}$, orekaren inguruan; $E_p=\tfrac12ky^2$ jatorria orekan.</li>
+      </ul>
+      <p><a href="#bertikala">Teoria eta simulazioa →</a></p>
+    </div>
+  </details>
+
+  <details class="th" data-t="4" open>
+    <summary><span class="code">6.4</span>Pendulu sinplea</summary>
+    <div class="th-body">
+      <p class="pts">2023-24 maiatza, 1 puntu — «Deduzi ezazu bere maiztasun naturala, oszilazio txikien hurbilketarekin»</p>
+      <ul class="checklist">
+        <li>Irudia: $L$, $\varphi$, $T$, $mg$ eta osagaiak ($mg\sin\varphi$ tangentziala).</li>
+        <li>Tangentzialean: $mL\ddot\varphi=-mg\sin\varphi$.</li>
+        <li>$\sin\varphi\approx\varphi$ → $\ddot\varphi+(g/L)\varphi=0$.</li>
+        <li>$\omega_0=\sqrt{g/L}$, $T=2\pi\sqrt{L/g}$: ez $m$-ren ez anplitudearen menpe.</li>
+      </ul>
+      <p><a href="#pendulua">Teoria eta simulazioa →</a></p>
+    </div>
+  </details>
+</section>
